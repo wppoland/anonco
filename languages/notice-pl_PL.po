@@ -4,15 +4,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Notice - Announcement Bar for WooCommerce 0.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/notice\n"
+"POT-Creation-Date: 2026-06-16T20:23:18+00:00\n"
+"PO-Revision-Date: 2026-06-15 12:00+0000\n"
 "Last-Translator: WPPoland <kontakt@wppoland.com>\n"
 "Language-Team: Polish <pl@li.org>\n"
 "Language: pl_PL\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-06-14T21:46:41+00:00\n"
-"PO-Revision-Date: 2026-06-15 12:00+0000\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 "
+"|| n%100>14) ? 1 : 2);\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: notice\n"
 
@@ -28,8 +29,12 @@ msgstr "https://plogins.com/notice/"
 
 #. Description of the plugin
 #: notice.php
-msgid "A dismissible announcement or promo bar for store-wide messages and offers, with colours and an optional link."
-msgstr "Zamykany pasek ogłoszeń lub promocji do komunikatów i ofert obowiązujących w całym sklepie, z kolorami i opcjonalnym linkiem."
+msgid ""
+"A dismissible announcement or promo bar for store-wide messages and offers, "
+"with colours and an optional link."
+msgstr ""
+"Zamykany pasek ogłoszeń lub promocji do komunikatów i ofert obowiązujących w "
+"całym sklepie, z kolorami i opcjonalnym linkiem."
 
 #. Author of the plugin
 #: notice.php
@@ -42,15 +47,16 @@ msgid "https://plogins.com/"
 msgstr "https://plogins.com/"
 
 #: notice.php:48
-msgid "Notice - Announcement Bar for WooCommerce requires WooCommerce to be active."
-msgstr "Notice - Pasek ogłoszeń dla WooCommerce wymaga aktywnej wtyczki WooCommerce."
+msgid ""
+"Notice - Announcement Bar for WooCommerce requires WooCommerce to be active."
+msgstr ""
+"Notice - Pasek ogłoszeń dla WooCommerce wymaga aktywnej wtyczki WooCommerce."
 
 #: src/Admin/Settings.php:60
 msgid "Settings"
 msgstr "Ustawienia"
 
-#: src/Admin/Settings.php:70
-#: src/Admin/Settings.php:71
+#: src/Admin/Settings.php:70 src/Admin/Settings.php:71
 msgid "Announcement Bar"
 msgstr "Pasek ogłoszeń"
 
@@ -59,8 +65,16 @@ msgid "One bar. Store-wide attention."
 msgstr "Jeden pasek. Uwaga w całym sklepie."
 
 #: src/Admin/Settings.php:138
-msgid "Announce a sale, a shipping cut-off or any message across your whole store with a single bar at the top of every page. Add a call-to-action, pick your colours and let shoppers dismiss it. The live preview on the right updates as you type."
-msgstr "Ogłaszaj promocję, termin wysyłki lub dowolny komunikat w całym sklepie za pomocą jednego paska u góry każdej strony. Dodaj wezwanie do działania, wybierz kolory i pozwól klientom go zamknąć. Podgląd na żywo po prawej stronie aktualizuje się podczas pisania."
+msgid ""
+"Announce a sale, a shipping cut-off or any message across your whole store "
+"with a single bar at the top of every page. Add a call-to-action, pick your "
+"colours and let shoppers dismiss it. The live preview on the right updates "
+"as you type."
+msgstr ""
+"Ogłaszaj promocję, termin wysyłki lub dowolny komunikat w całym sklepie za "
+"pomocą jednego paska u góry każdej strony. Dodaj wezwanie do działania, "
+"wybierz kolory i pozwól klientom go zamknąć. Podgląd na żywo po prawej "
+"stronie aktualizuje się podczas pisania."
 
 #: src/Admin/Settings.php:154
 msgid "Save changes"
@@ -75,8 +89,12 @@ msgid "Enable the bar"
 msgstr "Włącz pasek"
 
 #: src/Admin/Settings.php:177
-msgid "The master switch. When off, nothing renders on your storefront and no CSS or JavaScript is loaded — zero front-end impact."
-msgstr "Główny przełącznik. Po wyłączeniu nic nie renderuje się w Twoim sklepie, a żadne pliki CSS ani JavaScript nie są ładowane — zerowy wpływ na front-end."
+msgid ""
+"The master switch. When off, nothing renders on your storefront and no CSS "
+"or JavaScript is loaded — zero front-end impact."
+msgstr ""
+"Główny przełącznik. Po wyłączeniu nic nie renderuje się w Twoim sklepie, a "
+"żadne pliki CSS ani JavaScript nie są ładowane — zerowy wpływ na front-end."
 
 #: src/Admin/Settings.php:188
 msgid "Show the announcement bar on the storefront."
@@ -87,12 +105,18 @@ msgid "Announcement text"
 msgstr "Treść ogłoszenia"
 
 #: src/Admin/Settings.php:195
-msgid "The message shoppers see. A little safe HTML is allowed: <strong>, <em>, <a>, <span> and <br>. Everything else is stripped on save."
-msgstr "Komunikat, który widzą klienci. Dozwolony jest ograniczony, bezpieczny kod HTML: <strong>, <em>, <a>, <span> i <br>. Wszystko inne jest usuwane przy zapisie."
+msgid ""
+"The message shoppers see. A little safe HTML is allowed: <strong>, <em>, "
+"<a>, <span> and <br>. Everything else is stripped on save."
+msgstr ""
+"Komunikat, który widzą klienci. Dozwolony jest ograniczony, bezpieczny kod "
+"HTML: <strong>, <em>, <a>, <span> i <br>. Wszystko inne jest usuwane przy "
+"zapisie."
 
 #: src/Admin/Settings.php:203
 msgid "e.g. Free shipping on orders over $50 — this weekend only!"
-msgstr "np. Darmowa wysyłka przy zamówieniach powyżej 200 zł — tylko w ten weekend!"
+msgstr ""
+"np. Darmowa wysyłka przy zamówieniach powyżej 200 zł — tylko w ten weekend!"
 
 #: src/Admin/Settings.php:206
 msgid "Allowed HTML: <strong>, <em>, <a href>, <span>, <br>."
@@ -103,16 +127,23 @@ msgid "Call to action"
 msgstr "Wezwanie do działania"
 
 #: src/Admin/Settings.php:225
-msgid "Optional. Add a button after your message. Leave the label blank to show text only."
-msgstr "Opcjonalnie. Dodaj przycisk za komunikatem. Pozostaw etykietę pustą, aby wyświetlić tylko tekst."
+msgid ""
+"Optional. Add a button after your message. Leave the label blank to show "
+"text only."
+msgstr ""
+"Opcjonalnie. Dodaj przycisk za komunikatem. Pozostaw etykietę pustą, aby "
+"wyświetlić tylko tekst."
 
 #: src/Admin/Settings.php:231
 msgid "Button label"
 msgstr "Etykieta przycisku"
 
 #: src/Admin/Settings.php:232
-msgid "The text on the button, e.g. \"Shop the sale\". Leave empty to hide the button."
-msgstr "Tekst na przycisku, np. „Kup w promocji”. Pozostaw puste, aby ukryć przycisk."
+msgid ""
+"The text on the button, e.g. \"Shop the sale\". Leave empty to hide the "
+"button."
+msgstr ""
+"Tekst na przycisku, np. „Kup w promocji”. Pozostaw puste, aby ukryć przycisk."
 
 #: src/Admin/Settings.php:241
 msgid "e.g. Shop now"
@@ -124,15 +155,20 @@ msgstr "Adres URL przycisku"
 
 #: src/Admin/Settings.php:248
 msgid "Where the button sends shoppers. Use a full URL including https://."
-msgstr "Dokąd przycisk kieruje klientów. Użyj pełnego adresu URL wraz z https://."
+msgstr ""
+"Dokąd przycisk kieruje klientów. Użyj pełnego adresu URL wraz z https://."
 
 #: src/Admin/Settings.php:264
 msgid "Open in new tab"
 msgstr "Otwórz w nowej karcie"
 
 #: src/Admin/Settings.php:265
-msgid "Opens the link in a new browser tab. The plugin adds rel=\"noopener\" automatically for security."
-msgstr "Otwiera link w nowej karcie przeglądarki. Wtyczka automatycznie dodaje rel=\"noopener\" dla bezpieczeństwa."
+msgid ""
+"Opens the link in a new browser tab. The plugin adds rel=\"noopener\" "
+"automatically for security."
+msgstr ""
+"Otwiera link w nowej karcie przeglądarki. Wtyczka automatycznie dodaje "
+"rel=\"noopener\" dla bezpieczeństwa."
 
 #: src/Admin/Settings.php:276
 msgid "Open the call-to-action link in a new tab."
@@ -142,81 +178,108 @@ msgstr "Otwieraj link wezwania do działania w nowej karcie."
 msgid "Appearance"
 msgstr "Wygląd"
 
-#: src/Admin/Settings.php:297
+#: src/Admin/Settings.php:295
+msgid ""
+"The defaults are a ready-to-use palette: a near-black bar, white text and a "
+"warm amber accent — readable on any theme with no tuning. Adjust them only "
+"if you want the bar to match your brand."
+msgstr ""
+
+#: src/Admin/Settings.php:300
 msgid "Background colour"
 msgstr "Kolor tła"
 
-#: src/Admin/Settings.php:297
-msgid "The bar background. Pick a colour with strong contrast against the text colour for readability."
-msgstr "Tło paska. Wybierz kolor o wysokim kontraście względem koloru tekstu, aby zapewnić czytelność."
+#: src/Admin/Settings.php:300
+msgid ""
+"The bar background. Pick a colour with strong contrast against the text "
+"colour for readability."
+msgstr ""
+"Tło paska. Wybierz kolor o wysokim kontraście względem koloru tekstu, aby "
+"zapewnić czytelność."
 
-#: src/Admin/Settings.php:298
+#: src/Admin/Settings.php:301
 msgid "Text colour"
 msgstr "Kolor tekstu"
 
-#: src/Admin/Settings.php:298
+#: src/Admin/Settings.php:301
 msgid "The message text colour."
 msgstr "Kolor tekstu komunikatu."
 
-#: src/Admin/Settings.php:299
+#: src/Admin/Settings.php:302
 msgid "Accent colour"
 msgstr "Kolor akcentu"
 
-#: src/Admin/Settings.php:299
+#: src/Admin/Settings.php:302
 msgid "Used for links inside the message and for the call-to-action button."
-msgstr "Używany do linków wewnątrz komunikatu oraz przycisku wezwania do działania."
+msgstr ""
+"Używany do linków wewnątrz komunikatu oraz przycisku wezwania do działania."
 
-#: src/Admin/Settings.php:314
+#: src/Admin/Settings.php:317
 msgid "Dismiss behaviour"
 msgstr "Zachowanie zamykania"
 
-#: src/Admin/Settings.php:319
+#: src/Admin/Settings.php:322
 msgid "Dismissible"
 msgstr "Możliwość zamknięcia"
 
-#: src/Admin/Settings.php:320
-msgid "Adds a close button. The shopper’s choice is stored in their browser (localStorage — no cookies, no personal data) so the bar stays hidden on return visits."
-msgstr "Dodaje przycisk zamknięcia. Wybór klienta jest przechowywany w jego przeglądarce (localStorage — bez plików cookie, bez danych osobowych), dzięki czemu pasek pozostaje ukryty przy kolejnych wizytach."
+#: src/Admin/Settings.php:323
+msgid ""
+"Adds a close button. The shopper’s choice is stored in their browser "
+"(localStorage — no cookies, no personal data) so the bar stays hidden on "
+"return visits."
+msgstr ""
+"Dodaje przycisk zamknięcia. Wybór klienta jest przechowywany w jego "
+"przeglądarce (localStorage — bez plików cookie, bez danych osobowych), "
+"dzięki czemu pasek pozostaje ukryty przy kolejnych wizytach."
 
-#: src/Admin/Settings.php:331
+#: src/Admin/Settings.php:334
 msgid "Let shoppers close the bar."
 msgstr "Pozwól klientom zamknąć pasek."
 
-#: src/Admin/Settings.php:337
+#: src/Admin/Settings.php:340
 msgid "Remember for (days)"
 msgstr "Pamiętaj przez (dni)"
 
-#: src/Admin/Settings.php:338
-msgid "How long a dismissal sticks before the bar can reappear. Use 0 to remember forever. Changing the message text resets this for everyone."
-msgstr "Jak długo zamknięcie jest pamiętane, zanim pasek może pojawić się ponownie. Wpisz 0, aby pamiętać na zawsze. Zmiana treści komunikatu resetuje to dla wszystkich."
+#: src/Admin/Settings.php:341
+msgid ""
+"How long a dismissal sticks before the bar can reappear. Use 0 to remember "
+"forever. Changing the message text resets this for everyone."
+msgstr ""
+"Jak długo zamknięcie jest pamiętane, zanim pasek może pojawić się ponownie. "
+"Wpisz 0, aby pamiętać na zawsze. Zmiana treści komunikatu resetuje to dla "
+"wszystkich."
 
-#: src/Admin/Settings.php:350
+#: src/Admin/Settings.php:353
 msgid "0 = remember forever."
 msgstr "0 = pamiętaj na zawsze."
 
-#: src/Admin/Settings.php:370
+#: src/Admin/Settings.php:373
 msgid "Announcement bar preview"
 msgstr "Podgląd paska ogłoszeń"
 
-#: src/Admin/Settings.php:371
+#: src/Admin/Settings.php:374
 msgid "Live preview"
 msgstr "Podgląd na żywo"
 
-#: src/Admin/Settings.php:373
-msgid "A sample of how your bar will look. Colours, text and the button update as you edit."
-msgstr "Przykład tego, jak będzie wyglądał Twój pasek. Kolory, tekst i przycisk aktualizują się podczas edycji."
+#: src/Admin/Settings.php:376
+msgid ""
+"A sample of how your bar will look. Colours, text and the button update as "
+"you edit."
+msgstr ""
+"Przykład tego, jak będzie wyglądał Twój pasek. Kolory, tekst i przycisk "
+"aktualizują się podczas edycji."
 
-#: src/Admin/Settings.php:389
+#: src/Admin/Settings.php:392
 msgid "Your announcement will appear here."
 msgstr "Tutaj pojawi się Twoje ogłoszenie."
 
 #. translators: %s: colour field name, e.g. Background colour.
-#: src/Admin/Settings.php:439
+#: src/Admin/Settings.php:442
 #, php-format
 msgid "%s hex value"
 msgstr "Wartość hex: %s"
 
-#: src/Admin/Settings.php:460
+#: src/Admin/Settings.php:463
 msgid "More information"
 msgstr "Więcej informacji"
 
@@ -224,6 +287,6 @@ msgstr "Więcej informacji"
 msgid "Site announcement"
 msgstr "Ogłoszenie witryny"
 
-#: templates/bar.php:73
+#: templates/bar.php:74
 msgid "Dismiss announcement"
 msgstr "Zamknij ogłoszenie"
