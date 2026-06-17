@@ -75,6 +75,10 @@ Yes. The bar spans the viewport width and the dismiss control stays reachable on
 1. The announcement bar on a storefront.
 2. The settings screen with a live preview.
 
+== External Services ==
+
+Notice does not connect to any external services. Your bar settings (message, link, colours and the dismissal options) are kept on your own site in the `notice_settings` option, with a `notice_db_version` marker for upgrades. The dismissal choice lives only in each visitor's browser via localStorage — no cookies, no personal data, and nothing leaves your store.
+
 == Changelog ==
 
 = 0.1.2 =
