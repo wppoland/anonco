@@ -95,6 +95,17 @@ final class BarRenderer implements HasHooks
                 extract($view, EXTR_SKIP);
                 require $template;
             })($view);
+
+            /**
+             * Fires after an announcement bar has been rendered.
+             *
+             * Add-ons can use this to record aggregate impressions without
+             * changing the storefront template.
+             *
+             * @param string               $barId    Rendered bar id.
+             * @param array<string, mixed> $settings Bar settings used for rendering.
+             */
+            do_action('notice/bar_rendered', $bar['id'], $bar['settings']);
         }
     }
 
