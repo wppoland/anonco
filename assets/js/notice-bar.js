@@ -19,6 +19,9 @@
 		el.classList.remove( 'is-live' );
 		void el.offsetWidth;
 		el.classList.add( 'is-live' );
+		el.dispatchEvent(
+			new CustomEvent( 'notice:bar-live', { bubbles: true } )
+		);
 	}
 
 	function initBar( bar ) {

@@ -84,6 +84,9 @@ Notice does not connect to any external services. Your bar settings (message, li
 = 0.1.3 =
 * Add `notice/bar_rendered` action after each active announcement bar renders, for aggregate impression analytics in extensions.
 
+= 0.1.3 =
+* `notice/bar_rendered` action after each active bar is printed, for PRO impression hooks.
+
 = 0.1.2 =
 * Multi-bar support via `notice/bars` filter; `notice/bar_active` now receives a bar id. Front-end dismissal handles stacked bars.
 
