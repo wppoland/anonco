@@ -22,8 +22,14 @@ dependency-free stylesheet. The CSS loads only when the bar is enabled and has a
 message, and the dismissal script only when the bar is also dismissible, so a
 disabled bar adds nothing to your pages.
 
-The plugin is developed in the open. Source and bug reports:
-https://github.com/wppoland/notice
+= Documentation and links =
+
+* **Documentation** - https://plogins.com/notice/docs/
+* **Plugin page** - https://plogins.com/notice/
+* **Source code** - https://github.com/wppoland/notice
+* **Bug reports and feature requests** - https://github.com/wppoland/notice/issues
+* **Discussions and questions** - https://github.com/wppoland/notice/discussions
+
 
 = Features =
 
