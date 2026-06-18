@@ -1,5 +1,5 @@
 === Notice - Announcement Bar for WooCommerce ===
-Contributors: wppoland
+Contributors: motylanogha
 Tags: woocommerce, announcement bar, notification bar, promo bar, sale banner
 Requires at least: 6.5
 Tested up to: 7.0
