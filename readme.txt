@@ -37,7 +37,7 @@ disabled bar adds nothing to your pages.
 * Message with a small safe-HTML allow-list (**bold**, *italic*, links, line breaks).
 * Optional call-to-action button with its own URL and new-tab option.
 * Custom background, text and accent colours with a live preview.
-* Dismissible with the choice remembered in the browser (localStorage — no cookies, no personal data).
+* Dismissible with the choice remembered in the browser (localStorage, no cookies, no personal data).
 * Changing the message text re-shows the bar to everyone automatically.
 * Accessible: ARIA region, keyboard-operable close button, focus-visible styles, respects reduced motion.
 * No layout-shift beyond the bar's own height; assets load only when the bar is active.
@@ -64,7 +64,7 @@ modern themes support it.
 = Can shoppers close the bar? =
 
 Yes, when "Dismissible" is on. The choice is stored in the visitor's browser using
-localStorage — no cookies and no personal data. You can set how many days the
+localStorage, no cookies and no personal data. You can set how many days the
 dismissal lasts (0 = forever). Editing the message text re-shows the bar to everyone.
 
 = Does it slow down my store? =
@@ -83,7 +83,7 @@ Yes. The bar spans the viewport width and the dismiss control stays reachable on
 
 == External Services ==
 
-Notice does not connect to any external services. Your bar settings (message, link, colours and the dismissal options) are kept on your own site in the `notice_settings` option, with a `notice_db_version` marker for upgrades. The dismissal choice lives only in each visitor's browser via localStorage — no cookies, no personal data, and nothing leaves your store.
+Notice does not connect to any external services. Your bar settings (message, link, colours and the dismissal options) are kept on your own site in the `notice_settings` option, with a `notice_db_version` marker for upgrades. The dismissal choice lives only in each visitor's browser via localStorage, no cookies, no personal data, and nothing leaves your store.
 
 == Changelog ==
 
