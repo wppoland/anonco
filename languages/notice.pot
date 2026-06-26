@@ -73,7 +73,7 @@ msgid "Enable the bar"
 msgstr ""
 
 #: src/Admin/Settings.php:177
-msgid "The master switch. When off, nothing renders on your storefront and no CSS or JavaScript is loaded — zero front-end impact."
+msgid "The master switch. When off, nothing renders on your storefront and no CSS or JavaScript is loaded, zero front-end impact."
 msgstr ""
 
 #: src/Admin/Settings.php:188
@@ -89,7 +89,7 @@ msgid "The message shoppers see. A little safe HTML is allowed: <strong>, <em>, 
 msgstr ""
 
 #: src/Admin/Settings.php:203
-msgid "e.g. Free shipping on orders over $50 — this weekend only!"
+msgid "e.g. Free shipping on orders over $50, this weekend only!"
 msgstr ""
 
 #: src/Admin/Settings.php:206
@@ -141,7 +141,7 @@ msgid "Appearance"
 msgstr ""
 
 #: src/Admin/Settings.php:295
-msgid "The defaults are a ready-to-use palette: a near-black bar, white text and a warm amber accent — readable on any theme with no tuning. Adjust them only if you want the bar to match your brand."
+msgid "The defaults are a ready-to-use palette: a near-black bar, white text and a warm amber accent, readable on any theme with no tuning. Adjust them only if you want the bar to match your brand."
 msgstr ""
 
 #: src/Admin/Settings.php:300
@@ -177,7 +177,7 @@ msgid "Dismissible"
 msgstr ""
 
 #: src/Admin/Settings.php:323
-msgid "Adds a close button. The shopper’s choice is stored in their browser (localStorage — no cookies, no personal data) so the bar stays hidden on return visits."
+msgid "Adds a close button. The shopper’s choice is stored in their browser (localStorage, no cookies, no personal data) so the bar stays hidden on return visits."
 msgstr ""
 
 #: src/Admin/Settings.php:334

@@ -91,10 +91,10 @@ msgstr "Włącz pasek"
 #: src/Admin/Settings.php:177
 msgid ""
 "The master switch. When off, nothing renders on your storefront and no CSS "
-"or JavaScript is loaded — zero front-end impact."
+"or JavaScript is loaded, zero front-end impact."
 msgstr ""
 "Główny przełącznik. Po wyłączeniu nic nie renderuje się w Twoim sklepie, a "
-"żadne pliki CSS ani JavaScript nie są ładowane — zerowy wpływ na front-end."
+"żadne pliki CSS ani JavaScript nie są ładowane, zerowy wpływ na front-end."
 
 #: src/Admin/Settings.php:188
 msgid "Show the announcement bar on the storefront."
@@ -114,9 +114,9 @@ msgstr ""
 "zapisie."
 
 #: src/Admin/Settings.php:203
-msgid "e.g. Free shipping on orders over $50 — this weekend only!"
+msgid "e.g. Free shipping on orders over $50, this weekend only!"
 msgstr ""
-"np. Darmowa wysyłka przy zamówieniach powyżej 200 zł — tylko w ten weekend!"
+"np. Darmowa wysyłka przy zamówieniach powyżej 200 zł, tylko w ten weekend!"
 
 #: src/Admin/Settings.php:206
 msgid "Allowed HTML: <strong>, <em>, <a href>, <span>, <br>."
@@ -181,7 +181,7 @@ msgstr "Wygląd"
 #: src/Admin/Settings.php:295
 msgid ""
 "The defaults are a ready-to-use palette: a near-black bar, white text and a "
-"warm amber accent — readable on any theme with no tuning. Adjust them only "
+"warm amber accent, readable on any theme with no tuning. Adjust them only "
 "if you want the bar to match your brand."
 msgstr ""
 
@@ -225,11 +225,11 @@ msgstr "Możliwość zamknięcia"
 #: src/Admin/Settings.php:323
 msgid ""
 "Adds a close button. The shopper’s choice is stored in their browser "
-"(localStorage — no cookies, no personal data) so the bar stays hidden on "
+"(localStorage, no cookies, no personal data) so the bar stays hidden on "
 "return visits."
 msgstr ""
 "Dodaje przycisk zamknięcia. Wybór klienta jest przechowywany w jego "
-"przeglądarce (localStorage — bez plików cookie, bez danych osobowych), "
+"przeglądarce (localStorage, bez plików cookie, bez danych osobowych), "
 "dzięki czemu pasek pozostaje ukryty przy kolejnych wizytach."
 
 #: src/Admin/Settings.php:334

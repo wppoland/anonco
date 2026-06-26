@@ -174,7 +174,7 @@ final class Settings implements HasHooks
                     <tr>
                         <th scope="row">
                             <?php esc_html_e('Enable the bar', 'notice'); ?>
-                            <?php $this->help(__('The master switch. When off, nothing renders on your storefront and no CSS or JavaScript is loaded — zero front-end impact.', 'notice')); ?>
+                            <?php $this->help(__('The master switch. When off, nothing renders on your storefront and no CSS or JavaScript is loaded, zero front-end impact.', 'notice')); ?>
                         </th>
                         <td>
                             <label for="notice_enabled">
@@ -200,7 +200,7 @@ final class Settings implements HasHooks
                                 name="<?php echo esc_attr(SettingsRepository::OPTION); ?>[message]"
                                 class="large-text"
                                 rows="3"
-                                placeholder="<?php esc_attr_e('e.g. Free shipping on orders over $50 — this weekend only!', 'notice'); ?>"
+                                placeholder="<?php esc_attr_e('e.g. Free shipping on orders over $50, this weekend only!', 'notice'); ?>"
                             ><?php echo esc_textarea((string) ($settings['message'] ?? '')); ?></textarea>
                             <p class="description">
                                 <?php esc_html_e('Allowed HTML: <strong>, <em>, <a href>, <span>, <br>.', 'notice'); ?>
@@ -292,7 +292,7 @@ final class Settings implements HasHooks
         <div class="notice-admin__card">
             <h2><?php esc_html_e('Appearance', 'notice'); ?></h2>
             <p class="description">
-                <?php esc_html_e('The defaults are a ready-to-use palette: a near-black bar, white text and a warm amber accent — readable on any theme with no tuning. Adjust them only if you want the bar to match your brand.', 'notice'); ?>
+                <?php esc_html_e('The defaults are a ready-to-use palette: a near-black bar, white text and a warm amber accent, readable on any theme with no tuning. Adjust them only if you want the bar to match your brand.', 'notice'); ?>
             </p>
             <table class="form-table" role="presentation">
                 <tbody>
@@ -320,7 +320,7 @@ final class Settings implements HasHooks
                     <tr>
                         <th scope="row">
                             <?php esc_html_e('Dismissible', 'notice'); ?>
-                            <?php $this->help(__('Adds a close button. The shopper’s choice is stored in their browser (localStorage — no cookies, no personal data) so the bar stays hidden on return visits.', 'notice')); ?>
+                            <?php $this->help(__('Adds a close button. The shopper’s choice is stored in their browser (localStorage, no cookies, no personal data) so the bar stays hidden on return visits.', 'notice')); ?>
                         </th>
                         <td>
                             <label for="notice_dismissible">
