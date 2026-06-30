@@ -40,7 +40,7 @@ $notice_style = sprintf(
 <div
 	class="notice-bar"
 	role="region"
-	aria-label="<?php esc_attr_e('Site announcement', 'notice'); ?>"
+	aria-label="<?php esc_attr_e('Site announcement', 'plogins-notice'); ?>"
 	style="<?php echo esc_attr($notice_style); ?>"
 	data-notice-bar-id="<?php echo esc_attr($bar_id); ?>"
 	<?php if ($dismissible) : ?>
@@ -73,7 +73,7 @@ $notice_style = sprintf(
 		<button
 			type="button"
 			class="notice-bar__close"
-			aria-label="<?php esc_attr_e('Dismiss announcement', 'notice'); ?>"
+			aria-label="<?php esc_attr_e('Dismiss announcement', 'plogins-notice'); ?>"
 		>
 			<span aria-hidden="true">&times;</span>
 		</button>

@@ -1,10 +1,10 @@
-=== Notice - Announcement Bar for WooCommerce ===
+=== Plogins Notice for WooCommerce ===
 Contributors: motylanogha
 Tags: woocommerce, announcement bar, notification bar, promo bar, sale banner
 Requires at least: 6.5
 Tested up to: 7.0
 Requires PHP: 8.1
-Stable tag: 0.1.3
+Stable tag: 0.1.4
 Requires Plugins: woocommerce
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -24,11 +24,10 @@ disabled bar adds nothing to your pages.
 
 = Documentation and links =
 
-* **Documentation** - https://plogins.com/notice/docs/
-* **Plugin page** - https://plogins.com/notice/
-* **Source code** - https://github.com/wppoland/notice
-* **Bug reports and feature requests** - https://github.com/wppoland/notice/issues
-* **Discussions and questions** - https://github.com/wppoland/notice/discussions
+* **Documentation** - https://plogins.com/plogins-notice/docs/
+* **Plugin page** - https://plogins.com/plogins-notice/
+* **Source code** - https://github.com/wppoland/plogins-notice
+* **Bug reports and feature requests** - https://github.com/wppoland/plogins-notice/issues
 
 
 = Features =
@@ -86,6 +85,9 @@ Yes. The bar spans the viewport width and the dismiss control stays reachable on
 Notice does not connect to any external services. Your bar settings (message, link, colours and the dismissal options) are kept on your own site in the `notice_settings` option, with a `notice_db_version` marker for upgrades. The dismissal choice lives only in each visitor's browser via localStorage, no cookies, no personal data, and nothing leaves your store.
 
 == Changelog ==
+
+= 0.1.4 =
+* Renamed to Plogins Notice for WooCommerce for a more distinctive plugin name.
 
 = 0.1.3 =
 * Add `notice/bar_rendered` action after each active announcement bar renders, for aggregate impression analytics in extensions.
