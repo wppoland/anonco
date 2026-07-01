@@ -1,4 +1,4 @@
-=== Plogins Notice for WooCommerce ===
+=== Plogins Notice - Announcement Bar for WooCommerce ===
 Contributors: motylanogha
 Tags: woocommerce, announcement bar, notification bar, promo bar, sale banner
 Requires at least: 6.5
