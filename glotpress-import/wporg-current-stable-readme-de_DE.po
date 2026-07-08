@@ -1,0 +1,73 @@
+# wp.org Stable Readme translation (de_DE)
+msgid ""
+msgstr ""
+"Project-Id-Version: notice Stable Readme\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: plogins-i18n\n"
+
+msgid "Requires Plugins: woocommerce"
+msgstr "Erfordert Plugins: woocommerce"
+
+msgid "A dismissible store-wide announcement bar for WooCommerce: message, link and colours."
+msgstr "Eine entfernbare, geschäftsweite Ankündigungsleiste für WooCommerce: Nachricht, Link und Farben."
+
+msgid "Notice adds one announcement bar to the top of your WooCommerce store. Use it to\npromote a sale, a free-shipping threshold, a shipping cut-off or any store-wide\nmessage, with an optional call-to-action button and your own colours."
+msgstr "Hinweis fügt oben in deinem WooCommerce-Shop eine Ankündigungsleiste hinzu. Benutze es, um\nBewerbe einen Ausverkauf, einen Schwellenwert für den kostenlosen Versand, eine Versandfrist oder etwas anderes im gesamten Geschäft\nNachricht, optional mit Call-to-Action-Button und deinen eigenen Farben."
+
+msgid "The bar is rendered server-side at `wp_body_open` and ships a small,\ndependency-free stylesheet. The CSS loads only when the bar is enabled and has a\nmessage, and the dismissal script only when the bar is also dismissible, so a\ndisabled bar adds nothing to your pages."
+msgstr "Die Leiste wird serverseitig bei „wp_body_open“ gerendert und enthält eine kleine,\nAbhängigkeitsfreies Stylesheet. Das CSS wird nur geladen, wenn die Leiste aktiviert ist und über eine verfügt\nNachricht und das Entlassungsskript nur, wenn die Bar auch entlassen werden kann, also a\nDie deaktivierte Leiste fügt deinen Seiten nichts hinzu."
+
+msgid "* <strong>Documentation</strong> - https://plogins.com/plogins-notice/docs/\n* <strong>Plugin page</strong> - https://plogins.com/plogins-notice/\n* <strong>Source code</strong> - https://github.com/wppoland/plogins-notice\n* <strong>Bug reports and feature requests</strong> - https://github.com/wppoland/plogins-notice/issues"
+msgstr "* <strong>Dokumentation</strong> - https://plogins.com/de/plogins-notice/docs/\n* <strong>Plugin-Seite</strong> - https://plogins.com/de/plogins-notice/\n* <strong>Quellcode</strong> – https://github.com/wppoland/plogins-notice\n* <strong>Fehlerberichte und Funktionsanfragen</strong> – https://github.com/wppoland/plogins-notice/issues"
+
+msgid "* A single store-wide announcement bar pinned to the top of every page.\n* Message with a small safe-HTML allow-list (<strong>bold</strong>, *italic*, links, line breaks).\n* Optional call-to-action button with its own URL and new-tab option.\n* Custom background, text and accent colours with a live preview.\n* Dismissible with the choice remembered in the browser (localStorage, no cookies, no personal data).\n* Changing the message text re-shows the bar to everyone automatically.\n* Accessible: ARIA region, keyboard-operable close button, focus-visible styles, respects reduced motion.\n* No layout-shift beyond the bar's own height; assets load only when the bar is active.\n* Translation ready (POT included) and a clean uninstall.\n* HPOS and cart/checkout blocks compatible."
+msgstr "* Eine einzige, geschäftsweite Ankündigungsleiste, die oben auf jeder Seite angeheftet ist.\n* Nachricht mit einer kleinen sicheren HTML-Zulassungsliste (<strong>fett</strong>, *kursiv*, Links, Zeilenumbrüche).\n* Optionaler Call-to-Action-Button mit eigener URL und neuer Tab-Option.\n* Benutzerdefinierte Hintergrund-, Text- und Akzentfarben mit Live-Vorschau.\n* Kann mit der im Browser gespeicherten Auswahl deaktiviert werden (lokaler Speicher, keine Cookies, keine persönlichen Daten).\n* Wenn du den Nachrichtentext ändern, wird die Leiste automatisch wieder allen angezeigt.\n* Zugänglich: ARIA-Region, über die Tastatur bedienbare Schließtaste, Fokus-sichtbare Stile, berücksichtigt reduzierte Bewegung.\n* Keine Layoutverschiebung über die eigene Höhe der Leiste hinaus; Assets werden nur geladen, wenn die Leiste aktiv ist.\n* Übersetzungsbereit (POT inklusive) und saubere Deinstallation.\n* Kompatibel mit HPOS und Warenkorb-/Kassenblöcken."
+
+msgid "1. Upload the plugin to `/wp-content/plugins/notice`, or install via Plugins → Add New.\n2. Activate it. WooCommerce must be active.\n3. Go to <strong>WooCommerce → Announcement Bar</strong>, write your message, set colours, then enable the bar."
+msgstr "1. Lade das Plugin nach „/wp-content/plugins/notice“ hoch oder installiere es über Plugins → Neu hinzufügen.\n2. Aktiviere es. WooCommerce muss aktiv sein.\n3. Gehe zu <strong>WooCommerce → Ankündigungsleiste</strong>, schreibe deine Nachricht, lege Farben fest und aktiviere dann die Leiste."
+
+msgid "Yes."
+msgstr "Ganz oben auf jeder Frontend-Seite, über den „wp_body_open“-Hook des Themes. Die meisten\nModerne Themes unterstützen es."
+
+msgid "At the very top of every front-end page, via the theme's `wp_body_open` hook. Most\nmodern themes support it."
+msgstr "Ja, wenn „Entfernbar“ aktiviert ist. Die Auswahl wird im Browser des Besuchers gespeichert\nlocalStorage, keine Cookies und keine personenbezogenen Daten. Du kannst einstellen, wie viele Tage die\nDie Entlassung dauert (0 = für immer). Wenn du den Nachrichtentext bearbeiten, wird die Leiste allen wieder angezeigt."
+
+msgid "Yes, when \"Dismissible\" is on. The choice is stored in the visitor's browser using\nlocalStorage, no cookies and no personal data. You can set how many days the\ndismissal lasts (0 = forever). Editing the message text re-shows the bar to everyone."
+msgstr "Nein. Das CSS und das Entlassungsskript werden nur dann in die Warteschlange gestellt, wenn die Leiste tatsächlich aktiv ist.\nund das Markup ist einfaches HTML. Es gibt kein Front-End-JavaScript-Framework."
+
+msgid "No. The CSS and dismissal script are only enqueued when the bar is actually active,\nand the markup is plain HTML. There is no front-end JavaScript framework."
+msgstr "Ja. Die Leiste erstreckt sich über die gesamte Breite des Ansichtsfensters und das Steuerelement zum Schließen bleibt auf kleinen Bildschirmen erreichbar."
+
+msgid "Yes. The bar spans the viewport width and the dismiss control stays reachable on small screens."
+msgstr "Ja. Dieses Plugin ist mit WordPress Multisite kompatibel. Aktiviere es im Netzwerk oder auf einzelnen Websites. Jede Site behält ihre eigenen Einstellungen und Daten."
+
+msgid "Yes. This plugin is compatible with WordPress Multisite. Network activate it or activate it on individual sites; each site keeps its own settings and data."
+msgstr "1. Die Ankündigungsleiste an einer Ladenfront.\n2. Der Einstellungsbildschirm mit einer Live-Vorschau."
+
+msgid "1. The announcement bar on a storefront.\n2. The settings screen with a live preview."
+msgstr "Der Hinweis stellt keine Verbindung zu externen Diensten her. deine Leisteneinstellungen (Nachricht, Link, Farben und Ablehnungsoptionen) werden auf deiner eigenen Website in der Option „notice_settings“ gespeichert, mit einer Markierung „notice_db_version“ für Upgrades. Die Möglichkeit zum Ablehnen bleibt nur im Browser jedes Besuchers über localStorage bestehen, es gibt keine Cookies, keine persönlichen Daten und nichts verlässt deinen Shop."
+
+msgid "Notice does not connect to any external services. Your bar settings (message, link, colours and the dismissal options) are kept on your own site in the `notice_settings` option, with a `notice_db_version` marker for upgrades. The dismissal choice lives only in each visitor's browser via localStorage, no cookies, no personal data, and nothing leaves your store."
+msgstr "* Erste stabile Version."
+
+msgid "* First stable release."
+msgstr "* Für einen eindeutigeren Plugin-Namen in „Plogins-Hinweis für WooCommerce“ umbenannt."
+
+msgid "* Renamed to Plogins Notice for WooCommerce for a more distinctive plugin name."
+msgstr "* Füge die Aktion „notice/bar_rendered“ nach dem Rendern jeder aktiven Ankündigungsleiste hinzu, um eine Analyse der Gesamteindrücke in Erweiterungen zu ermöglichen."
+
+msgid "* Add `notice/bar_rendered` action after each active announcement bar renders, for aggregate impression analytics in extensions."
+msgstr "* „notice/bar_rendered“-Aktion nach dem Drucken jedes aktiven Balkens für PRO-Impression-Hooks."
+
+msgid "* `notice/bar_rendered` action after each active bar is printed, for PRO impression hooks."
+msgstr "* Multi-Bar-Unterstützung über den Filter „notice/bars“; „notice/bar_active“ erhält jetzt eine Bar-ID. Die Entlassung am vorderen Ende erfolgt über gestapelte Stangen."
+
+msgid "* Multi-bar support via `notice/bars` filter; `notice/bar_active` now receives a bar id. Front-end dismissal handles stacked bars."
+msgstr "* Füge den Filter „notice/bar_active“ hinzu, damit PRO- und benutzerdefinierter Code die Sichtbarkeit der Leiste einschränken können."
+
+msgid "* Add `notice/bar_active` filter so PRO and custom code can narrow bar visibility."
+msgstr "* Erstveröffentlichung: geschäftsweite Ankündigungsleiste mit Nachricht, CTA-Link, Farben und Kündigung."
+
