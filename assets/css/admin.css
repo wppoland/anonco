@@ -212,22 +212,6 @@
 }
 
 /* Dark-mode aware: respect the admin scheme where the browser reports it. */
-@media (prefers-color-scheme: dark) {
-	.notice-admin {
-		/*
-		 * On the dark card the true brand amber clears AA comfortably
-		 * (#ffd166 = 11.02:1 on #1d2327), so the family colour is restored.
-		 * The help glyph then needs dark text on amber (11.02:1) rather than
-		 * white.
-		 */
-		--notice-a-accent: #ffd166;
-		--notice-a-accent-fg: #1d2327;
-		--notice-a-card-bg: #1d2327;
-		--notice-a-card-border: #3c434a;
-		--notice-a-muted: #a7aaad;
-	}
-}
-
 @media (prefers-reduced-motion: reduce) {
 	.notice-admin__help,
 	.notice-admin__bar-cta {
