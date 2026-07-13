@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:       Plogins Notice - Announcement Bar for WooCommerce
+ * Plugin Name:       Notice - Announcement Bar for WooCommerce
  * Plugin URI:        https://plogins.com/plogins-notice/
  * Description:        A dismissible announcement or promo bar for store-wide messages and offers, with colours and an optional link.
  * Version:           1.0.3
