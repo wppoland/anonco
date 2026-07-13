@@ -8,66 +8,72 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: plogins-i18n\n"
 
-msgid "Requires Plugins: woocommerce"
-msgstr "Requiere complementos: woocommerce"
-
 msgid "A dismissible store-wide announcement bar for WooCommerce: message, link and colours."
-msgstr "Una barra de anuncios descartable en toda la tienda para WooCommerce: mensaje, enlace y colores."
+msgstr "Una barra de anuncios descartable para toda la tienda en WooCommerce: mensaje, enlace y colores."
 
 msgid "Notice adds one announcement bar to the top of your WooCommerce store. Use it to\npromote a sale, a free-shipping threshold, a shipping cut-off or any store-wide\nmessage, with an optional call-to-action button and your own colours."
-msgstr "El aviso añade una barra de anuncios en la parte superior de su tienda WooCommerce. Úselo para\npromocionar una oferta, un umbral de envío gratuito, una fecha límite de envío o cualquier acción en toda la tienda.\nmensaje, con un botón de llamada a la acción opcional y tus propios colores."
+msgstr "Notice añade una barra de anuncios en la parte superior de tu tienda WooCommerce. Úsala para\npromocionar una oferta, un umbral de envío gratis, una fecha límite de envío o cualquier mensaje\npara toda la tienda, con un botón de llamada a la acción opcional y tus propios colores."
 
 msgid "The bar is rendered server-side at `wp_body_open` and ships a small,\ndependency-free stylesheet. The CSS loads only when the bar is enabled and has a\nmessage, and the dismissal script only when the bar is also dismissible, so a\ndisabled bar adds nothing to your pages."
-msgstr "La barra se representa en el lado del servidor en `wp_body_open` y se envía una pequeña,\nhoja de estilo libre de dependencias. El CSS se carga sólo cuando la barra está habilitada y tiene un\nmensaje y el guión de despido solo cuando la barra también se puede descartar, por lo que un\nLa barra deshabilitada no añade nada a sus páginas."
+msgstr "La barra se renderiza en el servidor en `wp_body_open` e incluye una pequeña\nhoja de estilos sin dependencias. El CSS solo se carga cuando la barra está activada y tiene\nmensaje, y el script de descarte solo cuando la barra también es descartable, así que una\nbarra desactivada no añade nada a tus páginas."
 
 msgid "* <strong>Documentation</strong> - https://plogins.com/plogins-notice/docs/\n* <strong>Plugin page</strong> - https://plogins.com/plogins-notice/\n* <strong>Source code</strong> - https://github.com/wppoland/plogins-notice\n* <strong>Bug reports and feature requests</strong> - https://github.com/wppoland/plogins-notice/issues"
-msgstr "* <strong>Documentación</strong> - https://plogins.com/es/plogins-notice/docs/\n* <strong>Página de complementos</strong> - https://plogins.com/es/plogins-notice/\n* <strong>Código fuente</strong> - https://github.com/wppoland/plogins-notice\n* <strong>Informes de errores y solicitudes de funciones</strong> - https://github.com/wppoland/plogins-notice/issues"
+msgstr "* <strong>Documentación</strong> - https://plogins.com/es/plogins-notice/docs/\n* <strong>Página del plugin</strong> - https://plogins.com/es/plogins-notice/\n* <strong>Código fuente</strong> - https://github.com/wppoland/plogins-notice\n* <strong>Informes de errores y peticiones de funciones</strong> - https://github.com/wppoland/plogins-notice/issues"
 
 msgid "* A single store-wide announcement bar pinned to the top of every page.\n* Message with a small safe-HTML allow-list (<strong>bold</strong>, *italic*, links, line breaks).\n* Optional call-to-action button with its own URL and new-tab option.\n* Custom background, text and accent colours with a live preview.\n* Dismissible with the choice remembered in the browser (localStorage, no cookies, no personal data).\n* Changing the message text re-shows the bar to everyone automatically.\n* Accessible: ARIA region, keyboard-operable close button, focus-visible styles, respects reduced motion.\n* No layout-shift beyond the bar's own height; assets load only when the bar is active.\n* Translation ready (POT included) and a clean uninstall.\n* HPOS and cart/checkout blocks compatible."
-msgstr "* Una única barra de anuncios para toda la tienda fijada en la parte superior de cada página.\n* Mensaje con una pequeña lista de HTML permitidos seguros (<strong>negrita</strong>, *cursiva*, enlaces, saltos de línea).\n* Botón de llamada a la acción opcional con su propia URL y opción de nueva pestaña.\n* Colores de fondo, texto y acento personalizados con una vista previa en vivo.\n* Descartable con la elección recordada en el navegador (almacenamiento local, sin cookies, sin datos personales).\n* Cambiar el texto del mensaje vuelve a mostrar la barra a todos automáticamente.\n* Accesible: región ARIA, botón de cierre operable por teclado, estilos de enfoque visible, respeta el movimiento reducido.\n* No hay cambios de diseño más allá de la propia altura de la barra; Los activos se cargan solo cuando la barra está activa.\n* Traducción lista (POT incluida) y desinstalación limpia.\n* Compatible con HPOS y bloques de carrito/pago."
+msgstr "* Una sola barra de anuncios para toda la tienda, fijada en la parte superior de cada página.\n* Mensaje con una pequeña lista de HTML seguro permitido (<strong>negrita</strong>, *cursiva*, enlaces, saltos de línea).\n* Botón de llamada a la acción opcional con su propia URL y opción de nueva pestaña.\n* Colores personalizados de fondo, texto y acento con vista previa en directo.\n* Descartable, con la elección recordada en el navegador (localStorage, sin cookies, sin datos personales).\n* Cambiar el texto del mensaje vuelve a mostrar la barra a todos automáticamente.\n* Accesible: región ARIA, botón de cierre manejable con el teclado, estilos de foco visibles, respeta la reducción de movimiento.\n* Sin saltos de diseño más allá de la altura propia de la barra; los recursos se cargan solo cuando la barra está activa.\n* Listo para traducir (POT incluido) y desinstalación limpia.\n* Compatible con HPOS y con los bloques de carrito y pago."
 
 msgid "1. Upload the plugin to `/wp-content/plugins/notice`, or install via Plugins → Add New.\n2. Activate it. WooCommerce must be active.\n3. Go to <strong>WooCommerce → Announcement Bar</strong>, write your message, set colours, then enable the bar."
-msgstr "1. Cargue el complemento en `/wp-content/plugins/notice`, o instálelo a través de Complementos → Añadir nuevo.\n2. Actívalo. WooCommerce debe estar activo.\n3. Vaya a <strong>WooCommerce → Barra de anuncios</strong>, escriba su mensaje, configure los colores y luego activa la barra."
+msgstr "1. Sube el plugin a `/wp-content/plugins/notice` o instálalo desde Plugins → Añadir nuevo.\n2. Actívalo. WooCommerce debe estar activo.\n3. Ve a <strong>WooCommerce → Barra de anuncios</strong>, escribe tu mensaje, define los colores y luego activa la barra."
 
 msgid "Yes."
-msgstr "En la parte superior de cada página de inicio, a través del gancho `wp_body_open` del tema. la mayoría\nLos temas modernos lo apoyan."
+msgstr "Sí, se necesita WooCommerce activo."
 
 msgid "At the very top of every front-end page, via the theme's `wp_body_open` hook. Most\nmodern themes support it."
-msgstr "Sí, cuando \"Descartable\" está activado. La elección se almacena en el navegador del visitante utilizando\nAlmacenamiento local, sin cookies ni datos personales. Puede establecer cuántos días\nel despido dura (0 = para siempre). Al editar el texto del mensaje, se vuelve a mostrar la barra a todos."
+msgstr "En la parte superior de cada página del front-end, mediante el gancho `wp_body_open` del tema. La mayoría de\ntemas modernos lo admiten."
 
 msgid "Yes, when \"Dismissible\" is on. The choice is stored in the visitor's browser using\nlocalStorage, no cookies and no personal data. You can set how many days the\ndismissal lasts (0 = forever). Editing the message text re-shows the bar to everyone."
-msgstr "No. El CSS y el script de despido solo se ponen en cola cuando la barra está realmente activa.\ny el marcado es HTML simple. No existe un marco de JavaScript front-end."
+msgstr "Sí, cuando «Descartable» está activado. La elección se guarda en el navegador del visitante mediante\nlocalStorage, sin cookies ni datos personales. Puedes definir cuántos días\ndura el descarte (0 = para siempre). Al editar el texto del mensaje, la barra vuelve a mostrarse a todos."
 
 msgid "No. The CSS and dismissal script are only enqueued when the bar is actually active,\nand the markup is plain HTML. There is no front-end JavaScript framework."
-msgstr "Sí. La barra abarca todo el ancho de la ventana gráfica y el control de descartar permanece accesible en pantallas pequeñas."
+msgstr "No. El CSS y el script de descarte solo se cargan cuando la barra está realmente activa,\ny el marcado es HTML sencillo. No hay ningún framework de JavaScript en el front-end."
 
 msgid "Yes. The bar spans the viewport width and the dismiss control stays reachable on small screens."
-msgstr "Sí. Este complemento es compatible con WordPress Multisite. Activarlo en red o activarlo en sitios individuales; Cada sitio mantiene su propia configuración y datos."
+msgstr "Sí. La barra ocupa el ancho del viewport y el control de descarte sigue accesible en pantallas pequeñas."
 
 msgid "Yes. This plugin is compatible with WordPress Multisite. Network activate it or activate it on individual sites; each site keeps its own settings and data."
-msgstr "1. La barra de anuncios en el escaparate de una tienda.\n2. La pantalla de configuración con una vista previa en vivo."
+msgstr "Sí. Este plugin es compatible con WordPress Multisite. Actívalo para toda la red o en sitios concretos; cada sitio conserva sus propios ajustes y datos."
 
 msgid "1. The announcement bar on a storefront.\n2. The settings screen with a live preview."
-msgstr "El aviso no se conecta a ningún servicio externo. La configuración de su barra (mensaje, enlace, colores y opciones de cierre) se guardan en tu propio sitio en la opción `notice_settings`, con un marcador `notice_db_version` para actualizaciones. La opción de despido reside únicamente en el navegador de cada visitante a través de localStorage, sin cookies, sin datos personales y nada sale de su tienda."
+msgstr "1. La barra de anuncios en la tienda.\n2. La pantalla de ajustes con vista previa en directo."
 
 msgid "Notice does not connect to any external services. Your bar settings (message, link, colours and the dismissal options) are kept on your own site in the `notice_settings` option, with a `notice_db_version` marker for upgrades. The dismissal choice lives only in each visitor's browser via localStorage, no cookies, no personal data, and nothing leaves your store."
-msgstr "* Primera versión estable."
+msgstr "Notice no se conecta a ningún servicio externo. Los ajustes de tu barra (mensaje, enlace, colores y opciones de descarte) se guardan en tu propio sitio en la opción `notice_settings`, con el marcador `notice_db_version` para actualizaciones. La elección de descarte vive solo en el navegador de cada visitante mediante localStorage, sin cookies ni datos personales, y nada sale de tu tienda."
+
+msgid "Plogins Notice includes Polish, German and Spanish translations for the plugin interface. The text domain is `plogins-notice`, so WordPress.org language packs can also override or extend these bundled translations."
+msgstr "Plogins Notice incluye traducciones al polaco, al alemán y al español para la interfaz del plugin. El dominio de texto es `plogins-notice`, por lo que los paquetes de idioma de WordPress.org también pueden sustituir o ampliar estas traducciones incluidas."
+
+msgid "* Added bundled Polish, German and Spanish translations for the plugin interface."
+msgstr "* Se añadieron traducciones incluidas al polaco, al alemán y al español para la interfaz del plugin."
 
 msgid "* First stable release."
-msgstr "* Renombrado como Aviso de Plogins para WooCommerce para obtener un nombre de complemento más distintivo."
+msgstr "* Primera versión estable."
 
 msgid "* Renamed to Plogins Notice for WooCommerce for a more distinctive plugin name."
-msgstr "* Añade la acción `notice/bar_rendered` después de que se represente cada barra de anuncio activa, para análisis de impresiones agregadas en extensiones."
+msgstr "* Renombrado a Plogins Notice for WooCommerce para un nombre de plugin más distintivo."
 
 msgid "* Add `notice/bar_rendered` action after each active announcement bar renders, for aggregate impression analytics in extensions."
-msgstr "* Acción `notice/bar_rendered` después de imprimir cada barra activa, para ganchos de impresión PRO."
+msgstr "* Añade la acción `notice/bar_rendered` después de renderizar cada barra de anuncios activa, para analíticas agregadas de impresiones en extensiones."
 
 msgid "* `notice/bar_rendered` action after each active bar is printed, for PRO impression hooks."
-msgstr "* Compatibilidad con barras múltiples mediante el filtro \"aviso/barras\"; `notice/bar_active` ahora recibe una identificación de barra. La salida frontal maneja barras apiladas."
+msgstr "* Acción `notice/bar_rendered` después de imprimir cada barra activa, para ganchos de impresiones PRO."
 
 msgid "* Multi-bar support via `notice/bars` filter; `notice/bar_active` now receives a bar id. Front-end dismissal handles stacked bars."
-msgstr "* Añade el filtro `notice/bar_active` para que PRO y el código personalizado puedan reducir la visibilidad de la barra."
+msgstr "* Compatibilidad con varias barras mediante el filtro `notice/bars`; `notice/bar_active` recibe ahora un id de barra. El descarte en el front-end maneja barras apiladas."
 
 msgid "* Add `notice/bar_active` filter so PRO and custom code can narrow bar visibility."
-msgstr "* Lanzamiento inicial: barra de anuncios en toda la tienda con mensaje, enlace CTA, colores y despido."
+msgstr "* Añade el filtro `notice/bar_active` para que PRO y el código personalizado puedan restringir la visibilidad de la barra."
+
+msgid "* Initial release: store-wide announcement bar with message, CTA link, colours and dismissal."
+msgstr "* Lanzamiento inicial: barra de anuncios para toda la tienda con mensaje, enlace CTA, colores y descarte."
 

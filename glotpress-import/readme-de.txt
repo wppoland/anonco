@@ -4,48 +4,48 @@ Tags: woocommerce, announcement bar, notification bar, promo bar, sale banner
 Requires at least: 6.5
 Tested up to: 7.0
 Requires PHP: 8.1
-Stable tag: 1.0.1
-Erfordert Plugins: woocommerce
+Stable tag: 1.0.2
+Requires Plugins: woocommerce
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Eine entfernbare, geschäftsweite Ankündigungsleiste für WooCommerce: Nachricht, Link und Farben.
+Eine ausblendbare, shopweite Ankündigungsleiste für WooCommerce: Nachricht, Link und Farben.
 
 == Description ==
 
-Hinweis fügt oben in deinem WooCommerce-Shop eine Ankündigungsleiste hinzu. Benutze es, um
-Bewerbe einen Ausverkauf, einen Schwellenwert für den kostenlosen Versand, eine Versandfrist oder etwas anderes im gesamten Geschäft
-Nachricht, optional mit Call-to-Action-Button und deinen eigenen Farben.
+Notice fügt oben in deinem WooCommerce-Shop eine Ankündigungsleiste hinzu. Nutze sie, um
+einen Sale, eine Schwelle für kostenlosen Versand, einen Versand-Stichtag oder eine beliebige shopweite
+Nachricht zu bewerben, optional mit Call-to-Action-Button und deinen eigenen Farben.
 
-Die Leiste wird serverseitig bei „wp_body_open“ gerendert und enthält eine kleine,
-Abhängigkeitsfreies Stylesheet. Das CSS wird nur geladen, wenn die Leiste aktiviert ist und über eine verfügt
-Nachricht und das Entlassungsskript nur, wenn die Bar auch entlassen werden kann, also a
-Die deaktivierte Leiste fügt deinen Seiten nichts hinzu.
+Die Leiste wird serverseitig bei `wp_body_open` gerendert und liefert ein kleines,
+abhängigkeitsfreies Stylesheet. Das CSS wird nur geladen, wenn die Leiste aktiviert ist und eine
+Nachricht hat, und das Ausblend-Skript nur, wenn die Leiste auch ausblendbar ist, sodass eine
+deaktivierte Leiste deinen Seiten nichts hinzufügt.
 
 = Documentation and links =
 
 * <strong>Dokumentation</strong> - https://plogins.com/de/plogins-notice/docs/
 * <strong>Plugin-Seite</strong> - https://plogins.com/de/plogins-notice/
-* <strong>Quellcode</strong> – https://github.com/wppoland/plogins-notice
-* <strong>Fehlerberichte und Funktionsanfragen</strong> – https://github.com/wppoland/plogins-notice/issues
+* <strong>Quellcode</strong> - https://github.com/wppoland/plogins-notice
+* <strong>Fehlerberichte und Funktionswünsche</strong> - https://github.com/wppoland/plogins-notice/issues
 
 
 = Features =
 
-* Eine einzige, geschäftsweite Ankündigungsleiste, die oben auf jeder Seite angeheftet ist.
-* Nachricht mit einer kleinen sicheren HTML-Zulassungsliste (<strong>fett</strong>, *kursiv*, Links, Zeilenumbrüche).
-* Optionaler Call-to-Action-Button mit eigener URL und neuer Tab-Option.
-* Benutzerdefinierte Hintergrund-, Text- und Akzentfarben mit Live-Vorschau.
-* Kann mit der im Browser gespeicherten Auswahl deaktiviert werden (lokaler Speicher, keine Cookies, keine persönlichen Daten).
-* Wenn du den Nachrichtentext ändern, wird die Leiste automatisch wieder allen angezeigt.
-* Zugänglich: ARIA-Region, über die Tastatur bedienbare Schließtaste, Fokus-sichtbare Stile, berücksichtigt reduzierte Bewegung.
-* Keine Layoutverschiebung über die eigene Höhe der Leiste hinaus; Assets werden nur geladen, wenn die Leiste aktiv ist.
-* Übersetzungsbereit (POT inklusive) und saubere Deinstallation.
-* Kompatibel mit HPOS und Warenkorb-/Kassenblöcken.
+* Eine einzige shopweite Ankündigungsleiste, oben auf jeder Seite angeheftet.
+* Nachricht mit einer kleinen sicheren HTML-Allowlist (<strong>fett</strong>, *kursiv*, Links, Zeilenumbrüche).
+* Optionaler Call-to-Action-Button mit eigener URL und Option für neuen Tab.
+* Eigene Hintergrund-, Text- und Akzentfarben mit Live-Vorschau.
+* Ausblendbar, wobei die Auswahl im Browser gespeichert wird (localStorage, keine Cookies, keine personenbezogenen Daten).
+* Änderst du den Nachrichtentext, wird die Leiste automatisch wieder allen angezeigt.
+* Barrierefrei: ARIA-Region, per Tastatur bedienbarer Schließen-Button, sichtbare Fokus-Stile, respektiert reduzierte Bewegung.
+* Keine Layout-Verschiebung über die eigene Höhe der Leiste hinaus; Assets werden nur geladen, wenn die Leiste aktiv ist.
+* Übersetzungsbereit (POT enthalten) und saubere Deinstallation.
+* Kompatibel mit HPOS sowie Warenkorb-/Kassenblöcken.
 
 == Installation ==
 
-1. Lade das Plugin nach „/wp-content/plugins/notice“ hoch oder installiere es über Plugins → Neu hinzufügen.
+1. Lade das Plugin nach `/wp-content/plugins/notice` hoch oder installiere es über Plugins → Installieren.
 2. Aktiviere es. WooCommerce muss aktiv sein.
 3. Gehe zu <strong>WooCommerce → Ankündigungsleiste</strong>, schreibe deine Nachricht, lege Farben fest und aktiviere dann die Leiste.
 
@@ -53,61 +53,68 @@ Die deaktivierte Leiste fügt deinen Seiten nichts hinzu.
 
 = Does it require WooCommerce? =
 
-Ja.
+Ja, WooCommerce muss aktiv sein.
 
 = Where does the bar appear? =
 
-Ganz oben auf jeder Frontend-Seite, über den „wp_body_open“-Hook des Themes. Die meisten
-Moderne Themes unterstützen es.
+Ganz oben auf jeder Frontend-Seite, über den `wp_body_open`-Hook des Themes. Die meisten
+modernen Themes unterstützen ihn.
 
 = Can shoppers close the bar? =
 
-Ja, wenn „Entfernbar“ aktiviert ist. Die Auswahl wird im Browser des Besuchers gespeichert
-localStorage, keine Cookies und keine personenbezogenen Daten. Du kannst einstellen, wie viele Tage die
-Die Entlassung dauert (0 = für immer). Wenn du den Nachrichtentext bearbeiten, wird die Leiste allen wieder angezeigt.
+Ja, wenn „Ausblendbar“ aktiviert ist. Die Auswahl wird im Browser des Besuchers über
+localStorage gespeichert — keine Cookies und keine personenbezogenen Daten. Du kannst festlegen, wie viele Tage
+die Ausblendung gilt (0 = für immer). Bearbeitest du den Nachrichtentext, wird die Leiste allen wieder angezeigt.
 
 = Does it slow down my store? =
 
-Nein. Das CSS und das Entlassungsskript werden nur dann in die Warteschlange gestellt, wenn die Leiste tatsächlich aktiv ist.
-und das Markup ist einfaches HTML. Es gibt kein Front-End-JavaScript-Framework.
+Nein. CSS und Ausblend-Skript werden nur geladen, wenn die Leiste tatsächlich aktiv ist,
+und das Markup ist schlichtes HTML. Es gibt kein Frontend-JavaScript-Framework.
 
 = Does the bar work on mobile? =
 
-Ja. Die Leiste erstreckt sich über die gesamte Breite des Ansichtsfensters und das Steuerelement zum Schließen bleibt auf kleinen Bildschirmen erreichbar.
+Ja. Die Leiste erstreckt sich über die Viewport-Breite, und die Ausblend-Steuerung bleibt auf kleinen Bildschirmen erreichbar.
 
 
 = Does this plugin work on WordPress Multisite? =
 
-Ja. Dieses Plugin ist mit WordPress Multisite kompatibel. Aktiviere es im Netzwerk oder auf einzelnen Websites. Jede Site behält ihre eigenen Einstellungen und Daten.
+Ja. Dieses Plugin ist mit WordPress Multisite kompatibel. Aktiviere es netzwerkweit oder auf einzelnen Websites; jede Website behält ihre eigenen Einstellungen und Daten.
 
 == Screenshots ==
 
-1. Die Ankündigungsleiste an einer Ladenfront.
-2. Der Einstellungsbildschirm mit einer Live-Vorschau.
+1. Die Ankündigungsleiste im Shop.
+2. Der Einstellungsbildschirm mit Live-Vorschau.
 
 == External Services ==
 
-Der Hinweis stellt keine Verbindung zu externen Diensten her. deine Leisteneinstellungen (Nachricht, Link, Farben und Ablehnungsoptionen) werden auf deiner eigenen Website in der Option „notice_settings“ gespeichert, mit einer Markierung „notice_db_version“ für Upgrades. Die Möglichkeit zum Ablehnen bleibt nur im Browser jedes Besuchers über localStorage bestehen, es gibt keine Cookies, keine persönlichen Daten und nichts verlässt deinen Shop.
+Notice stellt keine Verbindung zu externen Diensten her. Deine Leisten-Einstellungen (Nachricht, Link, Farben und Ausblend-Optionen) bleiben auf deiner eigenen Website in der Option `notice_settings`, mit dem Marker `notice_db_version` für Upgrades. Die Ausblend-Entscheidung liegt nur im Browser jedes Besuchers über localStorage — keine Cookies, keine personenbezogenen Daten — und nichts verlässt deinen Shop.
+
+== Translations ==
+
+Plogins Notice enthält polnische, deutsche und spanische Übersetzungen für die Plugin-Oberfläche. Die Textdomain ist `plogins-notice`, sodass Sprachpakete von WordPress.org diese mitgelieferten Übersetzungen ebenfalls überschreiben oder erweitern können.
 
 == Changelog ==
+
+= 1.0.2 =
+* Mitgelieferte polnische, deutsche und spanische Übersetzungen für die Plugin-Oberfläche hinzugefügt.
 
 = 1.0.1 =
 * Erste stabile Version.
 
 = 0.1.4 =
-* Für einen eindeutigeren Plugin-Namen in „Plogins-Hinweis für WooCommerce“ umbenannt.
+* Umbenannt in Plogins Notice for WooCommerce für einen unverwechselbaren Plugin-Namen.
 
 = 0.1.3 =
-* Füge die Aktion „notice/bar_rendered“ nach dem Rendern jeder aktiven Ankündigungsleiste hinzu, um eine Analyse der Gesamteindrücke in Erweiterungen zu ermöglichen.
+* Fügt die Aktion `notice/bar_rendered` nach dem Rendern jeder aktiven Ankündigungsleiste für aggregierte Impression-Analysen in Erweiterungen hinzu.
 
 = 0.1.3 =
-* „notice/bar_rendered“-Aktion nach dem Drucken jedes aktiven Balkens für PRO-Impression-Hooks.
+* Aktion `notice/bar_rendered` nach dem Ausgeben jeder aktiven Leiste, für PRO-Impression-Hooks.
 
 = 0.1.2 =
-* Multi-Bar-Unterstützung über den Filter „notice/bars“; „notice/bar_active“ erhält jetzt eine Bar-ID. Die Entlassung am vorderen Ende erfolgt über gestapelte Stangen.
+* Multi-Leisten-Unterstützung über den Filter `notice/bars`; `notice/bar_active` erhält jetzt eine Leisten-ID. Frontend-Ausblendung unterstützt gestapelte Leisten.
 
 = 0.1.1 =
-* Füge den Filter „notice/bar_active“ hinzu, damit PRO- und benutzerdefinierter Code die Sichtbarkeit der Leiste einschränken können.
+* Fügt den Filter `notice/bar_active` hinzu, damit PRO und eigener Code die Leistensichtbarkeit einschränken können.
 
 = 0.1.0 =
-* Erstveröffentlichung: geschäftsweite Ankündigungsleiste mit Nachricht, CTA-Link, Farben und Kündigung.
+* Erstveröffentlichung: shopweite Ankündigungsleiste mit Nachricht, CTA-Link, Farben und Ausblendung.
