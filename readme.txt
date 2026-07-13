@@ -96,7 +96,6 @@ Plogins Notice includes Polish, German and Spanish translations for the plugin i
 == Changelog ==
 
 = 1.0.3 =
-* Accessibility improvements to the admin and storefront markup.
 * Fixed low-contrast admin headings under an OS dark-mode preference.
 
 = 1.0.2 =
