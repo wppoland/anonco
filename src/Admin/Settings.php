@@ -29,9 +29,16 @@ final class Settings implements HasHooks
 
     private SettingsRepository $repository;
 
+    private ?ProUpsell $proUpsell = null;
+
     public function __construct(SettingsRepository $repository)
     {
         $this->repository = $repository;
+    }
+
+    private function proUpsell(): ProUpsell
+    {
+        return $this->proUpsell ??= new ProUpsell();
     }
 
     public function registerHooks(): void
@@ -43,6 +50,7 @@ final class Settings implements HasHooks
             'plugin_action_links_' . plugin_basename(\Notice\PLUGIN_FILE),
             [$this, 'actionLinks'],
         );
+        $this->proUpsell()->registerHooks();
     }
 
     /**
@@ -131,6 +139,8 @@ final class Settings implements HasHooks
         <div class="wrap notice-admin">
             <h1><?php echo esc_html(get_admin_page_title()); ?></h1>
 
+            <?php $this->proUpsell()->banner(); ?>
+
             <div class="notice-admin__intro">
                 <div>
                     <h2><?php esc_html_e('One bar. Store-wide attention.', 'plogins-notice'); ?></h2>
@@ -154,9 +164,14 @@ final class Settings implements HasHooks
                         <?php submit_button(__('Save changes', 'plogins-notice')); ?>
                     </div>
 
-                    <?php $this->renderPreviewPanel($settings); ?>
+                    <div class="notice-admin__side">
+                        <?php $this->renderPreviewPanel($settings); ?>
+                        <?php $this->proUpsell()->aside(); ?>
+                    </div>
                 </div>
             </form>
+
+            <?php $this->proUpsell()->cards(); ?>
         </div>
         <?php
     }
