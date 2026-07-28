@@ -1,5 +1,5 @@
 /**
- * Notice — admin settings screen.
+ * Notice, admin settings screen.
  *
  * A polished, themeable layer on top of the WordPress settings UI. Tokens live
  * under --notice-a-* so the look can be tuned in one place. Transitions are gated
@@ -10,13 +10,13 @@
 .notice-admin {
 	/*
 	 * Family-brand accent. The storefront bar's signal colour is amber
-	 * (--notice-link #ffd166). Raw #ffd166 on white is only 1.44:1 — far below
-	 * AA — so on the light admin surface we use a darkened amber that keeps the
+	 * (--notice-link #ffd166). Raw #ffd166 on white is only 1.44:1, far below
+	 * AA, so on the light admin surface we use a darkened amber that keeps the
 	 * family identity while meeting WCAG AA: #8a5a00 scores 5.93:1 on #fff and
 	 * 5.20:1 on the #f0f0f1 admin canvas (and 5.93:1 for white text on it). In
 	 * dark mode the surface flips, so the true brand amber #ffd166 is restored
 	 * (11.02:1 on the #1d2327 card). The accent appears only as the intro rail
-	 * and the inline-help glyph — restraint over flourish.
+	 * and the inline-help glyph, restraint over flourish.
 	 */
 	--notice-a-accent: #8a5a00;
 	--notice-a-accent-fg: #fff;
@@ -212,22 +212,6 @@
 }
 
 /* Dark-mode aware: respect the admin scheme where the browser reports it. */
-@media (prefers-color-scheme: dark) {
-	.notice-admin {
-		/*
-		 * On the dark card the true brand amber clears AA comfortably
-		 * (#ffd166 = 11.02:1 on #1d2327), so the family colour is restored.
-		 * The help glyph then needs dark text on amber (11.02:1) rather than
-		 * white.
-		 */
-		--notice-a-accent: #ffd166;
-		--notice-a-accent-fg: #1d2327;
-		--notice-a-card-bg: #1d2327;
-		--notice-a-card-border: #3c434a;
-		--notice-a-muted: #a7aaad;
-	}
-}
-
 @media (prefers-reduced-motion: reduce) {
 	.notice-admin__help,
 	.notice-admin__bar-cta {
@@ -236,25 +220,29 @@
 }
 
 /* ------------------------------------------------------------------ *
- * PRO upsell — dismissible banner, sidebar promo, "what PRO adds"
- * locked cards. Pure advertising (no disabled inputs), scoped to
- * .notice-admin, using the plugin's own amber accent for decoration.
- * White-on-accent surfaces (the PRO tag and the CTA buttons) use a
- * FIXED dark amber (--notice-pro-cta #8a5a00) so white text clears
- * WCAG AA (5.93:1) in both the light and dark admin schemes — the
- * --notice-a-accent token flips to a light amber in dark mode and is
- * therefore only used where the accent is decorative or coloured text.
+ * PRO upsell, dismissible banner, sidebar promo, "what PRO adds"
+ * locked cards. Pure advertising (no disabled inputs), scoped entirely
+ * to the .notice-admin page wrapper so nothing leaks into wp-admin.
+ *
+ * Accent contrast (WCAG):
+ *   Decorative accent  #2563eb, borders, rules, lock glyphs (non-text).
+ *   Button/text accent #1e40af, behind WHITE button text: 8.7:1 on
+ *                                white, clears AA (4.5:1) and AAA (7:1).
  * ------------------------------------------------------------------ */
+
 .notice-admin {
-	--notice-pro-cta: #8a5a00;
-	--notice-pro-gap: var(--notice-a-gap);
+	--notice-pro-accent: #2563eb;      /* decorative blue */
+	--notice-pro-accent-text: #1e40af; /* dark blue for white-on-accent CTAs */
+	--notice-pro-radius: 8px;
+	--notice-pro-radius-sm: 6px;
+	--notice-pro-gap: 20px;
 }
 
-/* Sidebar column: preview panel + promo card stacked. */
-.notice-admin .notice-admin__side {
+/* Right column stacks the live preview and the promo aside. */
+.notice-admin__side {
 	display: flex;
 	flex-direction: column;
-	gap: var(--notice-a-gap);
+	gap: var(--notice-pro-gap);
 }
 
 /* Top banner */
@@ -262,118 +250,56 @@
 	display: flex;
 	align-items: center;
 	gap: 14px;
-	margin: 0 0 var(--notice-a-gap);
+	margin: 1em 0 var(--notice-pro-gap);
 	padding: 12px 16px;
-	border: 1px solid color-mix(in srgb, var(--notice-a-accent) 30%, var(--notice-a-card-border));
-	border-inline-start: 4px solid var(--notice-a-accent);
-	border-radius: var(--notice-a-radius);
-	background: color-mix(in srgb, var(--notice-a-accent) 8%, var(--notice-a-card-bg));
+	border: 1px solid color-mix(in srgb, var(--notice-pro-accent) 30%, #dcdcde);
+	border-inline-start: 4px solid var(--notice-pro-accent);
+	border-radius: var(--notice-pro-radius);
+	background: color-mix(in srgb, var(--notice-pro-accent) 7%, #fff);
 }
 .notice-admin .notice-pro-banner__tag,
 .notice-admin .notice-pro-card__badge,
 .notice-admin .notice-pro-aside__eyebrow {
-	font-size: 11px;
-	font-weight: 700;
-	letter-spacing: .08em;
-	text-transform: uppercase;
+	font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
 }
-.notice-admin .notice-pro-banner__tag {
-	flex: 0 0 auto;
-	padding: 2px 8px;
-	border-radius: 999px;
-	color: #fff;
-	background: var(--notice-pro-cta);
-}
-.notice-admin .notice-pro-banner__text { flex: 1 1 auto; margin: 0; }
+.notice-admin .notice-pro-banner__tag { flex: 0 0 auto; padding: 2px 8px; border-radius: 999px; color: #fff; background: var(--notice-pro-accent-text); }
+.notice-admin .notice-pro-banner__text { flex: 1 1 auto; margin: 0; color: #1d2327; }
 .notice-admin .notice-pro-banner__sub { margin-inline-start: 4px; color: var(--notice-a-muted); }
-.notice-admin .notice-pro-banner__price {
-	margin-inline-start: 6px;
-	color: var(--notice-a-muted);
-	font-weight: 600;
-	white-space: nowrap;
-}
-.notice-admin .notice-pro-banner__dismiss {
-	flex: 0 0 auto;
-	font-size: 18px;
-	line-height: 1;
-	text-decoration: none;
-	color: var(--notice-a-muted);
-	padding: 4px;
-	border-radius: 4px;
-}
-.notice-admin .notice-pro-banner__dismiss:hover { color: inherit; background: rgba(127, 127, 127, .12); }
+.notice-admin .notice-pro-banner__price { margin-inline-start: 6px; color: var(--notice-a-muted); font-weight: 600; white-space: nowrap; }
+.notice-admin .notice-pro-banner__dismiss { flex: 0 0 auto; font-size: 18px; line-height: 1; text-decoration: none; color: var(--notice-a-muted); padding: 4px; border-radius: 4px; }
+.notice-admin .notice-pro-banner__dismiss:hover { color: #1d2327; background: rgba(0, 0, 0, .05); }
 
-/* Accent CTA buttons (override WP blue with the readable dark amber). */
+/* Accent CTA buttons (override WP blue with the readable dark accent) */
 .notice-admin .notice-pro-banner__cta.button-primary,
 .notice-admin .notice-pro-aside__cta.button-primary {
-	background: var(--notice-pro-cta);
-	border-color: color-mix(in srgb, var(--notice-pro-cta) 80%, #000);
-	color: #fff;
-	text-shadow: none;
-	box-shadow: none;
+	background: var(--notice-pro-accent-text); border-color: color-mix(in srgb, var(--notice-pro-accent-text) 80%, #000); color: #fff; text-shadow: none; box-shadow: none;
 }
 .notice-admin .notice-pro-banner__cta.button-primary:hover,
-.notice-admin .notice-pro-aside__cta.button-primary:hover {
-	background: color-mix(in srgb, var(--notice-pro-cta) 88%, #000);
-	border-color: color-mix(in srgb, var(--notice-pro-cta) 70%, #000);
-	color: #fff;
-}
+.notice-admin .notice-pro-aside__cta.button-primary:hover { background: color-mix(in srgb, var(--notice-pro-accent-text) 88%, #000); }
 
 /* Sidebar promo card */
 .notice-admin .notice-pro-aside {
-	border-top: 3px solid var(--notice-a-accent);
-	margin-block-end: 0;
+	background: #fff; border: 1px solid #dcdcde; border-top: 3px solid var(--notice-pro-accent); border-radius: var(--notice-pro-radius); padding: 18px 20px;
 }
-.notice-admin .notice-pro-aside__eyebrow { margin: 0 0 4px; color: var(--notice-a-accent); }
+.notice-admin .notice-pro-aside__eyebrow { margin: 0 0 4px; color: var(--notice-pro-accent-text); }
 .notice-admin .notice-pro-aside__heading { margin: 0 0 12px; font-size: 16px; line-height: 1.3; }
 .notice-admin .notice-pro-aside__list { margin: 0 0 16px; padding: 0; list-style: none; }
-.notice-admin .notice-pro-aside__list li {
-	display: flex;
-	align-items: flex-start;
-	gap: 8px;
-	padding: 5px 0;
-	font-size: 13px;
-}
+.notice-admin .notice-pro-aside__list li { display: flex; align-items: flex-start; gap: 8px; padding: 5px 0; color: #1d2327; font-size: 13px; }
 .notice-admin .notice-pro-aside__lock::before,
-.notice-admin .notice-pro-card__lock::before {
-	content: "\f160"; /* dashicons-lock */
-	font-family: dashicons;
-	font-size: 15px;
-	line-height: 1.2;
-	color: var(--notice-a-accent);
-}
+.notice-admin .notice-pro-card__lock::before { content: "\f160"; font-family: dashicons; font-size: 15px; line-height: 1.2; color: var(--notice-pro-accent); }
 .notice-admin .notice-pro-aside__cta { width: 100%; text-align: center; }
 .notice-admin .notice-pro-aside__price { margin: 10px 0 0; font-size: 12px; color: var(--notice-a-muted); text-align: center; }
 
 /* "What PRO adds" locked cards */
-.notice-admin .notice-pro-cards { max-width: 60rem; margin: var(--notice-a-gap) 0 0; }
+.notice-admin .notice-pro-cards { margin: var(--notice-pro-gap) 0 0; }
 .notice-admin .notice-pro-cards__title { font-size: 15px; margin: 0 0 12px; }
-.notice-admin .notice-pro-cards__grid {
-	display: grid;
-	gap: 14px;
-	grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-}
-.notice-admin .notice-pro-card {
-	position: relative;
-	padding: 16px 16px 16px 18px;
-	border: 1px solid var(--notice-a-card-border);
-	border-radius: var(--notice-a-radius-sm);
-	background: color-mix(in srgb, var(--notice-a-accent) 4%, var(--notice-a-card-bg));
-}
-.notice-admin .notice-pro-card__badge {
-	position: absolute;
-	top: 12px;
-	inset-inline-end: 12px;
-	padding: 1px 7px;
-	border-radius: 999px;
-	color: var(--notice-a-accent);
-	border: 1px solid color-mix(in srgb, var(--notice-a-accent) 40%, var(--notice-a-card-bg));
-}
+.notice-admin .notice-pro-cards__grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); }
+.notice-admin .notice-pro-card { position: relative; padding: 16px; border: 1px solid #dcdcde; border-radius: var(--notice-pro-radius-sm); background: color-mix(in srgb, var(--notice-pro-accent) 3%, #fff); }
+.notice-admin .notice-pro-card__badge { position: absolute; top: 12px; inset-inline-end: 12px; padding: 1px 7px; border-radius: 999px; color: var(--notice-pro-accent-text); border: 1px solid color-mix(in srgb, var(--notice-pro-accent) 40%, #fff); }
 .notice-admin .notice-pro-card__lock { display: inline-block; margin-bottom: 6px; }
 .notice-admin .notice-pro-card__title { margin: 0 0 6px; font-size: 14px; line-height: 1.3; }
 .notice-admin .notice-pro-card__desc { margin: 0; font-size: 12.5px; line-height: 1.5; color: var(--notice-a-muted); }
 
 @media (prefers-reduced-motion: no-preference) {
-	.notice-admin .notice-pro-banner__cta,
-	.notice-admin .notice-pro-aside__cta { transition: background-color .15s ease, border-color .15s ease; }
+	.notice-admin .notice-pro-banner__cta, .notice-admin .notice-pro-aside__cta { transition: background-color .15s ease, border-color .15s ease; }
 }

@@ -32,7 +32,7 @@ return static function (Container $c): void {
         ),
     );
 
-    // Admin screen — only needed in wp-admin context.
+    // Admin screen, only needed in wp-admin context.
     if (is_admin()) {
         $c->singleton(
             Settings::class,

@@ -26,7 +26,9 @@ msgstr ""
 
 #. Description of the plugin
 #: notice.php
-msgid "A dismissible announcement or promo bar for store-wide messages and offers, with colours and an optional link."
+msgid ""
+"A dismissible announcement or promo bar for store-wide messages and offers, "
+"with colours and an optional link."
 msgstr ""
 
 #. Author of the plugin
@@ -40,15 +42,15 @@ msgid "https://plogins.com/"
 msgstr ""
 
 #: plogins-notice.php:48
-msgid "Notice - Announcement Bar for WooCommerce requires WooCommerce to be active."
+msgid ""
+"Notice - Announcement Bar for WooCommerce requires WooCommerce to be active."
 msgstr ""
 
 #: src/Admin/Settings.php:60
 msgid "Settings"
 msgstr ""
 
-#: src/Admin/Settings.php:70
-#: src/Admin/Settings.php:71
+#: src/Admin/Settings.php:70 src/Admin/Settings.php:71
 msgid "Announcement Bar"
 msgstr ""
 
@@ -57,7 +59,11 @@ msgid "One bar. Store-wide attention."
 msgstr ""
 
 #: src/Admin/Settings.php:138
-msgid "Announce a sale, a shipping cut-off or any message across your whole store with a single bar at the top of every page. Add a call-to-action, pick your colours and let shoppers dismiss it. The live preview on the right updates as you type."
+msgid ""
+"Announce a sale, a shipping cut-off or any message across your whole store "
+"with a single bar at the top of every page. Add a call-to-action, pick your "
+"colours and let shoppers dismiss it. The live preview on the right updates "
+"as you type."
 msgstr ""
 
 #: src/Admin/Settings.php:154
@@ -73,7 +79,9 @@ msgid "Enable the bar"
 msgstr ""
 
 #: src/Admin/Settings.php:177
-msgid "The master switch. When off, nothing renders on your storefront and no CSS or JavaScript is loaded, zero front-end impact."
+msgid ""
+"The master switch. When off, nothing renders on your storefront and no CSS "
+"or JavaScript is loaded, zero front-end impact."
 msgstr ""
 
 #: src/Admin/Settings.php:188
@@ -85,7 +93,9 @@ msgid "Announcement text"
 msgstr ""
 
 #: src/Admin/Settings.php:195
-msgid "The message shoppers see. A little safe HTML is allowed: <strong>, <em>, <a>, <span> and <br>. Everything else is stripped on save."
+msgid ""
+"The message shoppers see. A little safe HTML is allowed: <strong>, <em>, "
+"<a>, <span> and <br>. Everything else is stripped on save."
 msgstr ""
 
 #: src/Admin/Settings.php:203
@@ -101,7 +111,9 @@ msgid "Call to action"
 msgstr ""
 
 #: src/Admin/Settings.php:225
-msgid "Optional. Add a button after your message. Leave the label blank to show text only."
+msgid ""
+"Optional. Add a button after your message. Leave the label blank to show "
+"text only."
 msgstr ""
 
 #: src/Admin/Settings.php:231
@@ -109,7 +121,9 @@ msgid "Button label"
 msgstr ""
 
 #: src/Admin/Settings.php:232
-msgid "The text on the button, e.g. \"Shop the sale\". Leave empty to hide the button."
+msgid ""
+"The text on the button, e.g. \"Shop the sale\". Leave empty to hide the "
+"button."
 msgstr ""
 
 #: src/Admin/Settings.php:241
@@ -129,7 +143,9 @@ msgid "Open in new tab"
 msgstr ""
 
 #: src/Admin/Settings.php:265
-msgid "Opens the link in a new browser tab. The plugin adds rel=\"noopener\" automatically for security."
+msgid ""
+"Opens the link in a new browser tab. The plugin adds rel=\"noopener\" "
+"automatically for security."
 msgstr ""
 
 #: src/Admin/Settings.php:276
@@ -141,7 +157,10 @@ msgid "Appearance"
 msgstr ""
 
 #: src/Admin/Settings.php:295
-msgid "The defaults are a ready-to-use palette: a near-black bar, white text and a warm amber accent, readable on any theme with no tuning. Adjust them only if you want the bar to match your brand."
+msgid ""
+"The defaults are a ready-to-use palette: a near-black bar, white text and a "
+"warm amber accent, readable on any theme with no tuning. Adjust them only if "
+"you want the bar to match your brand."
 msgstr ""
 
 #: src/Admin/Settings.php:300
@@ -149,7 +168,9 @@ msgid "Background colour"
 msgstr ""
 
 #: src/Admin/Settings.php:300
-msgid "The bar background. Pick a colour with strong contrast against the text colour for readability."
+msgid ""
+"The bar background. Pick a colour with strong contrast against the text "
+"colour for readability."
 msgstr ""
 
 #: src/Admin/Settings.php:301
@@ -177,7 +198,10 @@ msgid "Dismissible"
 msgstr ""
 
 #: src/Admin/Settings.php:323
-msgid "Adds a close button. The shopper’s choice is stored in their browser (localStorage, no cookies, no personal data) so the bar stays hidden on return visits."
+msgid ""
+"Adds a close button. The shopper’s choice is stored in their browser "
+"(localStorage, no cookies, no personal data) so the bar stays hidden on "
+"return visits."
 msgstr ""
 
 #: src/Admin/Settings.php:334
@@ -189,7 +213,9 @@ msgid "Remember for (days)"
 msgstr ""
 
 #: src/Admin/Settings.php:341
-msgid "How long a dismissal sticks before the bar can reappear. Use 0 to remember forever. Changing the message text resets this for everyone."
+msgid ""
+"How long a dismissal sticks before the bar can reappear. Use 0 to remember "
+"forever. Changing the message text resets this for everyone."
 msgstr ""
 
 #: src/Admin/Settings.php:353
@@ -205,7 +231,9 @@ msgid "Live preview"
 msgstr ""
 
 #: src/Admin/Settings.php:376
-msgid "A sample of how your bar will look. Colours, text and the button update as you edit."
+msgid ""
+"A sample of how your bar will look. Colours, text and the button update as "
+"you edit."
 msgstr ""
 
 #: src/Admin/Settings.php:392
@@ -228,4 +256,64 @@ msgstr ""
 
 #: templates/bar.php:76
 msgid "Dismiss announcement"
+msgstr ""
+
+#: src/Admin/ProUpsell.php:78
+msgid "Wkrótce"
+msgstr ""
+
+#: src/Admin/ProUpsell.php:78
+msgid "Coming soon"
+msgstr ""
+
+#. translators: %d: yearly price in PLN
+#: src/Admin/ProUpsell.php:83
+#, php-format
+msgid "od %d zł/rok"
+msgstr ""
+
+#. translators: 1: currency symbol, 2: yearly price
+#: src/Admin/ProUpsell.php:88
+#, php-format
+msgid "from %1$s%2$d/yr"
+msgstr ""
+
+#: src/Admin/ProUpsell.php:97
+msgid "Upgrade to PRO"
+msgstr ""
+
+#: src/Admin/ProUpsell.php:98
+msgid "Powiadom mnie"
+msgstr ""
+
+#: src/Admin/ProUpsell.php:98
+msgid "Get notified"
+msgstr ""
+
+#: src/Admin/ProUpsell.php:128
+msgid "Permission denied."
+msgstr ""
+
+#. translators: %s: PRO edition name
+#: src/Admin/ProUpsell.php:158
+#, php-format
+msgid "Do more with %s"
+msgstr ""
+
+#: src/Admin/ProUpsell.php:165
+msgid "Dismiss this notice"
+msgstr ""
+
+#: src/Admin/ProUpsell.php:182
+msgid "Unlock every PRO feature"
+msgstr ""
+
+#: src/Admin/ProUpsell.php:195
+msgid "one licence, every PRO feature"
+msgstr ""
+
+#. translators: %s: PRO edition name
+#: src/Admin/ProUpsell.php:214
+#, php-format
+msgid "What %s adds"
 msgstr ""

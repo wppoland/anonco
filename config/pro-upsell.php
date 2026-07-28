@@ -17,8 +17,8 @@ return [
     'currency'   => 'EUR',
     'price_pln'  => 85,
     'lead'       => [
-        'en' => 'Click and impression analytics, page, role, geo and device targeting, multiple bars and A/B testing — feature-complete PRO.',
-        'pl' => 'Analityka, targetowanie stron, ról, krajów i urządzeń, wiele pasków oraz testy A/B — kompletna wersja PRO.',
+        'en' => 'Click and impression analytics, page, role, geo and device targeting, multiple bars and A/B testing. Feature-complete PRO.',
+        'pl' => 'Analityka, targetowanie stron, ról, krajów i urządzeń, wiele pasków oraz testy A/B. Kompletna wersja PRO.',
     ],
     'features'   => [
         [

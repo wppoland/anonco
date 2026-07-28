@@ -1,5 +1,5 @@
 /**
- * Notice — storefront announcement bar.
+ * Notice, storefront announcement bar.
  *
  * Pure CSS, dependency-free. Colours are driven by CSS custom properties set
  * inline by the renderer (--notice-bg / --notice-fg / --notice-link) so themes
@@ -8,7 +8,7 @@
  * shift beyond the bar's own height. Motion is opt-in and disabled under
  * prefers-reduced-motion.
  *
- * Craft: the bar is the store's public voice — a herald going on air. A small
+ * Craft: the bar is the store's public voice, a herald going on air. A small
  * "live" signal pip breathes beside the message (the lit broadcast lamp), and a
  * single sweep of signal-gold light travels the bar the first time it appears
  * (the announcement going out over the wire). Dismissing it "signs off": the bar
@@ -48,7 +48,7 @@
 	text-align: center;
 }
 
-/* The single light sweep — a broadcast signal passing through the bar once on
+/* The single light sweep, a broadcast signal passing through the bar once on
    first reveal. Pure overlay (no layout cost), tinted by the signal colour, and
    only ever runs when the JS adds .is-live (so it never plays for a returning
    visitor whose bar was already on air). */
@@ -100,7 +100,7 @@
 	min-inline-size: 0;
 }
 
-/* The "on air" lamp — a small breathing pip that marks the message as live.
+/* The "on air" lamp, a small breathing pip that marks the message as live.
    It reserves a fixed size so it never shifts text, and it sits inline before
    the message via the inner flow. */
 .notice-bar__signal {
@@ -190,7 +190,7 @@
 
 /* Sign-off: when JS adds .is-signing-off the bar collapses its own height and
    fades out (the broadcast going off air) before it is removed from the DOM.
-   This only ever reclaims the bar's own space — no shift beyond its height. */
+   This only ever reclaims the bar's own space, no shift beyond its height. */
 .notice-bar.is-signing-off {
 	overflow: hidden;
 	transition:

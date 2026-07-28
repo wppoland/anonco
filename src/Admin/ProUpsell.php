@@ -39,6 +39,12 @@ final class ProUpsell
         return $this->data;
     }
 
+    /** Whether the PRO edition can actually be bought yet. */
+    private function sellable(): bool
+    {
+        return (bool) ($this->data()['sellable'] ?? false);
+    }
+
     /** Whether to render the promo at all (filterable for white-label builds). */
     public function enabled(): bool
     {
@@ -54,9 +60,9 @@ final class ProUpsell
     {
         $default = (string) ($this->data()['url'] ?? 'https://plogins.com/plogins-notice-pro/pricing/');
         /**
-         * Filters the URL the "Upgrade to PRO" buttons point at.
+         * Filters the URL the PRO call-to-action buttons point at.
          *
-         * @param string $url Default the Notice PRO pricing page.
+         * @param string $url Default the Notice PRO page.
          */
         return (string) apply_filters('notice/pro_url', $default);
     }
@@ -68,6 +74,9 @@ final class ProUpsell
 
     private function priceLabel(): string
     {
+        if (! $this->sellable()) {
+            return $this->isPolish() ? __('Wkrótce', 'plogins-notice') : __('Coming soon', 'plogins-notice');
+        }
         $d = $this->data();
         if ($this->isPolish() && ! empty($d['price_pln'])) {
             /* translators: %d: yearly price in PLN */
@@ -79,6 +88,14 @@ final class ProUpsell
             return sprintf(__('from %1$s%2$d/yr', 'plogins-notice'), $cur, (int) $d['price_from']);
         }
         return '';
+    }
+
+    /** The call-to-action label: buy when sellable, otherwise a soft notify. */
+    private function ctaLabel(): string
+    {
+        return $this->sellable()
+            ? __('Upgrade to PRO', 'plogins-notice')
+            : ($this->isPolish() ? __('Powiadom mnie', 'plogins-notice') : __('Get notified', 'plogins-notice'));
     }
 
     /** @return array<int, array{title: string, desc: string}> */
@@ -143,7 +160,7 @@ final class ProUpsell
                 <?php if ($price !== '') : ?><span class="notice-pro-banner__price"><?php echo esc_html($price); ?></span><?php endif; ?>
             </p>
             <a class="button button-primary notice-pro-banner__cta" href="<?php echo esc_url($this->url()); ?>" target="_blank" rel="noopener noreferrer">
-                <?php esc_html_e('Upgrade to PRO', 'plogins-notice'); ?>
+                <?php echo esc_html($this->ctaLabel()); ?>
             </a>
             <a class="notice-pro-banner__dismiss" href="<?php echo esc_url($this->dismissUrl()); ?>" aria-label="<?php esc_attr_e('Dismiss this notice', 'plogins-notice'); ?>">&times;</a>
         </div>
@@ -172,10 +189,10 @@ final class ProUpsell
                 <?php endforeach; ?>
             </ul>
             <a class="button button-primary button-hero notice-pro-aside__cta" href="<?php echo esc_url($this->url()); ?>" target="_blank" rel="noopener noreferrer">
-                <?php esc_html_e('Upgrade to PRO', 'plogins-notice'); ?>
+                <?php echo esc_html($this->ctaLabel()); ?>
             </a>
             <?php if ($price !== '') : ?>
-                <p class="notice-pro-aside__price"><?php echo esc_html($price); ?> · <?php esc_html_e('one licence, every PRO feature', 'plogins-notice'); ?></p>
+                <p class="notice-pro-aside__price"><?php echo esc_html($price); ?><?php if ($this->sellable()) : ?> · <?php esc_html_e('one licence, every PRO feature', 'plogins-notice'); ?><?php endif; ?></p>
             <?php endif; ?>
         </aside>
         <?php

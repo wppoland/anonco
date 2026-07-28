@@ -4,9 +4,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Notice - Announcement Bar for WooCommerce 0.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/notice\n"
-"POT-Creation-Date: 2026-06-16T20:23:18+00:00\n"
+"POT-Creation-Date: 2026-06-18T12:45:57+00:00\n"
 "PO-Revision-Date: 2026-06-15 12:00+0000\n"
-"Last-Translator: WPPoland <kontakt@wppoland.com>\n"
+"Last-Translator: motylanogha <szatkowski.mariusz@gmail.com>\n"
 "Language-Team: Polish <pl@li.org>\n"
 "Language: pl_PL\n"
 "MIME-Version: 1.0\n"
@@ -14,8 +14,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 "
 "|| n%100>14) ? 1 : 2);\n"
-"X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: plogins-notice\n"
+"X-Generator: WP-CLI 2.12.0\n"
 
 #. Plugin Name of the plugin
 #: notice.php
@@ -181,9 +181,13 @@ msgstr "Wygląd"
 #: src/Admin/Settings.php:295
 msgid ""
 "The defaults are a ready-to-use palette: a near-black bar, white text and a "
-"warm amber accent, readable on any theme with no tuning. Adjust them only "
-"if you want the bar to match your brand."
+"warm amber accent, readable on any theme with no tuning. Adjust them only if "
+"you want the bar to match your brand."
 msgstr ""
+"Wartości domyślne to gotowa do użycia paleta: prawie czarny pasek, biały "
+"tekst i ciepły bursztynowy akcent, czytelny w każdym motywie bez "
+"dostrajania. Dostosuj je tylko wtedy, gdy chcesz, aby pasek pasował do "
+"Twojej marki."
 
 #: src/Admin/Settings.php:300
 msgid "Background colour"
@@ -229,8 +233,8 @@ msgid ""
 "return visits."
 msgstr ""
 "Dodaje przycisk zamknięcia. Wybór klienta jest przechowywany w jego "
-"przeglądarce (localStorage, bez plików cookie, bez danych osobowych), "
-"dzięki czemu pasek pozostaje ukryty przy kolejnych wizytach."
+"przeglądarce (localStorage, bez plików cookie, bez danych osobowych), dzięki "
+"czemu pasek pozostaje ukryty przy kolejnych wizytach."
 
 #: src/Admin/Settings.php:334
 msgid "Let shoppers close the bar."
@@ -283,10 +287,70 @@ msgstr "Wartość hex: %s"
 msgid "More information"
 msgstr "Więcej informacji"
 
-#: templates/bar.php:42
+#: templates/bar.php:43
 msgid "Site announcement"
 msgstr "Ogłoszenie witryny"
 
-#: templates/bar.php:74
+#: templates/bar.php:76
 msgid "Dismiss announcement"
 msgstr "Zamknij ogłoszenie"
+
+#: src/Admin/ProUpsell.php:78
+msgid "Wkrótce"
+msgstr "Wkrótce"
+
+#: src/Admin/ProUpsell.php:78
+msgid "Coming soon"
+msgstr "Wkrótce"
+
+#. translators: %d: yearly price in PLN
+#: src/Admin/ProUpsell.php:83
+#, php-format
+msgid "od %d zł/rok"
+msgstr "od %d zł/rok"
+
+#. translators: 1: currency symbol, 2: yearly price
+#: src/Admin/ProUpsell.php:88
+#, php-format
+msgid "from %1$s%2$d/yr"
+msgstr "od %1$s%2$d/rok"
+
+#: src/Admin/ProUpsell.php:97
+msgid "Upgrade to PRO"
+msgstr "Przejdź na PRO"
+
+#: src/Admin/ProUpsell.php:98
+msgid "Powiadom mnie"
+msgstr "Powiadom mnie"
+
+#: src/Admin/ProUpsell.php:98
+msgid "Get notified"
+msgstr "Powiadom mnie"
+
+#: src/Admin/ProUpsell.php:128
+msgid "Permission denied."
+msgstr "Brak uprawnień."
+
+#. translators: %s: PRO edition name
+#: src/Admin/ProUpsell.php:158
+#, php-format
+msgid "Do more with %s"
+msgstr "Zrób więcej dzięki %s"
+
+#: src/Admin/ProUpsell.php:165
+msgid "Dismiss this notice"
+msgstr "Odrzuć to powiadomienie"
+
+#: src/Admin/ProUpsell.php:182
+msgid "Unlock every PRO feature"
+msgstr "Odblokuj wszystkie funkcje PRO"
+
+#: src/Admin/ProUpsell.php:195
+msgid "one licence, every PRO feature"
+msgstr "jedna licencja, wszystkie funkcje PRO"
+
+#. translators: %s: PRO edition name
+#: src/Admin/ProUpsell.php:214
+#, php-format
+msgid "What %s adds"
+msgstr "Co dodaje %s"
