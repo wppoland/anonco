@@ -49,8 +49,8 @@ msgstr "https://plogins.com/"
 msgid ""
 "Notice - Announcement Bar for WooCommerce requires WooCommerce to be active."
 msgstr ""
-"Hinweis – Die Ankündigungsleiste für WooCommerce erfordert, dass WooCommerce"
-" aktiv ist."
+"Hinweis – Die Ankündigungsleiste für WooCommerce erfordert, dass WooCommerce "
+"aktiv ist."
 
 #: src/Admin/Settings.php:60
 msgid "Settings"
@@ -185,8 +185,8 @@ msgstr "Aussehen"
 #: src/Admin/Settings.php:295
 msgid ""
 "The defaults are a ready-to-use palette: a near-black bar, white text and a "
-"warm amber accent, readable on any theme with no tuning. Adjust them only if"
-" you want the bar to match your brand."
+"warm amber accent, readable on any theme with no tuning. Adjust them only if "
+"you want the bar to match your brand."
 msgstr ""
 "Bei den Standardeinstellungen handelt es sich um eine gebrauchsfertige "
 "Palette: ein nahezu schwarzer Balken, weißer Text und ein warmer "
@@ -255,8 +255,8 @@ msgid ""
 "forever. Changing the message text resets this for everyone."
 msgstr ""
 "Wie lange ein Schließen bestehen bleibt, bevor die Leiste wieder erscheinen "
-"kann. Verwende 0, um es dauerhaft zu merken. Das Ändern des Nachrichtentexts"
-" setzt dies für alle zurück."
+"kann. Verwende 0, um es dauerhaft zu merken. Das Ändern des Nachrichtentexts "
+"setzt dies für alle zurück."
 
 #: src/Admin/Settings.php:353
 msgid "0 = remember forever."
@@ -299,3 +299,63 @@ msgstr "Site-Ankündigung"
 #: templates/bar.php:76
 msgid "Dismiss announcement"
 msgstr "Ankündigung verwerfen"
+
+#: src/Admin/ProUpsell.php:78
+msgid "Wkrótce"
+msgstr "Demnächst"
+
+#: src/Admin/ProUpsell.php:78
+msgid "Coming soon"
+msgstr "Demnächst"
+
+#. translators: %d: yearly price in PLN
+#: src/Admin/ProUpsell.php:83
+#, php-format
+msgid "od %d zł/rok"
+msgstr "ab %d zł/Jahr"
+
+#. translators: 1: currency symbol, 2: yearly price
+#: src/Admin/ProUpsell.php:88
+#, php-format
+msgid "from %1$s%2$d/yr"
+msgstr "ab %1$s%2$d/Jahr"
+
+#: src/Admin/ProUpsell.php:97
+msgid "Upgrade to PRO"
+msgstr "Auf PRO upgraden"
+
+#: src/Admin/ProUpsell.php:98
+msgid "Powiadom mnie"
+msgstr "Benachrichtige mich"
+
+#: src/Admin/ProUpsell.php:98
+msgid "Get notified"
+msgstr "Benachrichtige mich"
+
+#: src/Admin/ProUpsell.php:128
+msgid "Permission denied."
+msgstr "Zugriff verweigert."
+
+#. translators: %s: PRO edition name
+#: src/Admin/ProUpsell.php:158
+#, php-format
+msgid "Do more with %s"
+msgstr "Mehr erreichen mit %s"
+
+#: src/Admin/ProUpsell.php:165
+msgid "Dismiss this notice"
+msgstr "Diesen Hinweis ausblenden"
+
+#: src/Admin/ProUpsell.php:182
+msgid "Unlock every PRO feature"
+msgstr "Alle PRO-Funktionen freischalten"
+
+#: src/Admin/ProUpsell.php:195
+msgid "one licence, every PRO feature"
+msgstr "eine Lizenz, alle PRO-Funktionen"
+
+#. translators: %s: PRO edition name
+#: src/Admin/ProUpsell.php:214
+#, php-format
+msgid "What %s adds"
+msgstr "Was %s ergänzt"
