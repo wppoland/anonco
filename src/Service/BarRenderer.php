@@ -12,7 +12,7 @@ use Notice\Contract\HasHooks;
  * Renders the storefront announcement bar.
  *
  * Prints the bar at the very top of <body> (wp_body_open) and enqueues a tiny,
- * dependency-free stylesheet and dismissal script — only when the bar is
+ * dependency-free stylesheet and dismissal script, only when the bar is
  * actually active, so a disabled bar adds zero front-end weight. All output is
  * escaped; the message is run through wp_kses with the repository's allow-list.
  */

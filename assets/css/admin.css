@@ -1,5 +1,5 @@
 /**
- * Notice — admin settings screen.
+ * Notice, admin settings screen.
  *
  * A polished, themeable layer on top of the WordPress settings UI. Tokens live
  * under --notice-a-* so the look can be tuned in one place. Transitions are gated
@@ -10,13 +10,13 @@
 .notice-admin {
 	/*
 	 * Family-brand accent. The storefront bar's signal colour is amber
-	 * (--notice-link #ffd166). Raw #ffd166 on white is only 1.44:1 — far below
-	 * AA — so on the light admin surface we use a darkened amber that keeps the
+	 * (--notice-link #ffd166). Raw #ffd166 on white is only 1.44:1, far below
+	 * AA, so on the light admin surface we use a darkened amber that keeps the
 	 * family identity while meeting WCAG AA: #8a5a00 scores 5.93:1 on #fff and
 	 * 5.20:1 on the #f0f0f1 admin canvas (and 5.93:1 for white text on it). In
 	 * dark mode the surface flips, so the true brand amber #ffd166 is restored
 	 * (11.02:1 on the #1d2327 card). The accent appears only as the intro rail
-	 * and the inline-help glyph — restraint over flourish.
+	 * and the inline-help glyph, restraint over flourish.
 	 */
 	--notice-a-accent: #8a5a00;
 	--notice-a-accent-fg: #fff;
@@ -220,13 +220,13 @@
 }
 
 /* ------------------------------------------------------------------ *
- * PRO upsell — dismissible banner, sidebar promo, "what PRO adds"
+ * PRO upsell, dismissible banner, sidebar promo, "what PRO adds"
  * locked cards. Pure advertising (no disabled inputs), scoped entirely
  * to the .notice-admin page wrapper so nothing leaks into wp-admin.
  *
  * Accent contrast (WCAG):
- *   Decorative accent  #2563eb — borders, rules, lock glyphs (non-text).
- *   Button/text accent #1e40af — behind WHITE button text: 8.7:1 on
+ *   Decorative accent  #2563eb, borders, rules, lock glyphs (non-text).
+ *   Button/text accent #1e40af, behind WHITE button text: 8.7:1 on
  *                                white, clears AA (4.5:1) and AAA (7:1).
  * ------------------------------------------------------------------ */
 

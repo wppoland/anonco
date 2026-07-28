@@ -63,7 +63,7 @@ modernen Themes unterstützen ihn.
 = Can shoppers close the bar? =
 
 Ja, wenn „Ausblendbar“ aktiviert ist. Die Auswahl wird im Browser des Besuchers über
-localStorage gespeichert — keine Cookies und keine personenbezogenen Daten. Du kannst festlegen, wie viele Tage
+localStorage gespeichert, keine Cookies und keine personenbezogenen Daten. Du kannst festlegen, wie viele Tage
 die Ausblendung gilt (0 = für immer). Bearbeitest du den Nachrichtentext, wird die Leiste allen wieder angezeigt.
 
 = Does it slow down my store? =
@@ -87,7 +87,7 @@ Ja. Dieses Plugin ist mit WordPress Multisite kompatibel. Aktiviere es netzwerkw
 
 == External Services ==
 
-Notice stellt keine Verbindung zu externen Diensten her. Deine Leisten-Einstellungen (Nachricht, Link, Farben und Ausblend-Optionen) bleiben auf deiner eigenen Website in der Option `notice_settings`, mit dem Marker `notice_db_version` für Upgrades. Die Ausblend-Entscheidung liegt nur im Browser jedes Besuchers über localStorage — keine Cookies, keine personenbezogenen Daten — und nichts verlässt deinen Shop.
+Notice stellt keine Verbindung zu externen Diensten her. Deine Leisten-Einstellungen (Nachricht, Link, Farben und Ausblend-Optionen) bleiben auf deiner eigenen Website in der Option `notice_settings`, mit dem Marker `notice_db_version` für Upgrades. Die Ausblend-Entscheidung liegt nur im Browser jedes Besuchers über localStorage, keine Cookies, keine personenbezogenen Daten, und nichts verlässt deinen Shop.
 
 == Translations ==
 

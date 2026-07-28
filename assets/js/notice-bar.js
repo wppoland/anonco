@@ -1,5 +1,5 @@
 /**
- * Notice — storefront announcement bar (dismissal).
+ * Notice, storefront announcement bar (dismissal).
  *
  * Progressive enhancement, dependency-free. Dismissible bars are rendered with
  * [hidden] so there is no flash before this script decides whether the visitor
@@ -89,7 +89,7 @@
 			try {
 				ls.setItem( key, String( Date.now() ) );
 			} catch ( e ) {
-				/* Quota or private mode — fail quietly. */
+				/* Quota or private mode, fail quietly. */
 			}
 		}
 

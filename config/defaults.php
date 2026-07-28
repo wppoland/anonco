@@ -16,7 +16,7 @@ declare(strict_types=1);
 defined('ABSPATH') || exit;
 
 return [
-    // Master switch — off until the merchant writes a message and opts in.
+    // Master switch, off until the merchant writes a message and opts in.
     'enabled' => false,
 
     // The announcement. Limited safe HTML is allowed (<strong>, <em>, <a>, <br>, <span>).

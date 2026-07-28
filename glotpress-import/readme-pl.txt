@@ -63,7 +63,7 @@ nowoczesnych motywów go obsługuje.
 = Can shoppers close the bar? =
 
 Tak, gdy włączona jest opcja „Możliwość zamknięcia”. Wybór jest zapisywany w przeglądarce odwiedzającego w
-localStorage — bez plików cookie i bez danych osobowych. Możesz ustawić, na ile dni
+localStorage, bez plików cookie i bez danych osobowych. Możesz ustawić, na ile dni
 zamknięcie ma obowiązywać (0 = na zawsze). Edycja tekstu komunikatu ponownie pokazuje pasek wszystkim.
 
 = Does it slow down my store? =
@@ -87,7 +87,7 @@ Tak. Ta wtyczka jest zgodna z WordPress Multisite. Włącz ją dla całej sieci 
 
 == External Services ==
 
-Notice nie łączy się z żadnymi usługami zewnętrznymi. Ustawienia paska (komunikat, link, kolory i opcje zamykania) są przechowywane w Twojej witrynie w opcji `notice_settings`, ze znacznikiem `notice_db_version` na potrzeby aktualizacji. Wybór zamknięcia pozostaje wyłącznie w przeglądarce każdego odwiedzającego przez localStorage — bez plików cookie, bez danych osobowych — i nic nie opuszcza Twojego sklepu.
+Notice nie łączy się z żadnymi usługami zewnętrznymi. Ustawienia paska (komunikat, link, kolory i opcje zamykania) są przechowywane w Twojej witrynie w opcji `notice_settings`, ze znacznikiem `notice_db_version` na potrzeby aktualizacji. Wybór zamknięcia pozostaje wyłącznie w przeglądarce każdego odwiedzającego przez localStorage, bez plików cookie, bez danych osobowych, i nic nie opuszcza Twojego sklepu.
 
 == Translations ==
 

@@ -19,7 +19,7 @@ msgstr ""
 #. Plugin Name of the plugin
 #: notice.php
 msgid "Notice - Announcement Bar for WooCommerce"
-msgstr "Hinweis – Ankündigungsleiste für WooCommerce"
+msgstr "Hinweis, Ankündigungsleiste für WooCommerce"
 
 #. Plugin URI of the plugin
 #: notice.php
@@ -49,7 +49,7 @@ msgstr "https://plogins.com/"
 msgid ""
 "Notice - Announcement Bar for WooCommerce requires WooCommerce to be active."
 msgstr ""
-"Hinweis – Die Ankündigungsleiste für WooCommerce erfordert, dass WooCommerce "
+"Hinweis, Die Ankündigungsleiste für WooCommerce erfordert, dass WooCommerce "
 "aktiv ist."
 
 #: src/Admin/Settings.php:60
