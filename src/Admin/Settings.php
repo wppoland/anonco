@@ -394,9 +394,9 @@ final class Settings implements HasHooks
                 class="notice-admin__stage"
                 data-notice-preview
                 style="
-                    --notice-bg:<?php echo esc_attr($this->color($settings['bg_color'] ?? '', '#1e1e1e')); ?>;
-                    --notice-fg:<?php echo esc_attr($this->color($settings['text_color'] ?? '', '#ffffff')); ?>;
-                    --notice-link:<?php echo esc_attr($this->color($settings['link_color'] ?? '', '#ffd166')); ?>;
+                    --notice-bg:<?php echo esc_attr($this->repository->color($settings['bg_color'] ?? '', '#1e1e1e')); ?>;
+                    --notice-fg:<?php echo esc_attr($this->repository->color($settings['text_color'] ?? '', '#ffffff')); ?>;
+                    --notice-link:<?php echo esc_attr($this->repository->color($settings['link_color'] ?? '', '#ffd166')); ?>;
                 "
             >
                 <div class="notice-admin__bar">
@@ -426,7 +426,7 @@ final class Settings implements HasHooks
      */
     private function colorRow(string $key, string $label, array $settings, string $default, string $tip): void
     {
-        $value = $this->color($settings[$key] ?? '', $default);
+        $value = $this->repository->color($settings[$key] ?? '', $default);
         $id    = 'notice_' . $key;
         ?>
         <tr>
@@ -450,7 +450,7 @@ final class Settings implements HasHooks
                         name="<?php echo esc_attr(SettingsRepository::OPTION); ?>[<?php echo esc_attr($key); ?>]"
                         value="<?php echo esc_attr($value); ?>"
                         class="regular-text code"
-                        pattern="#?[A-Fa-f0-9]{3,6}"
+                        pattern="#?([A-Fa-f0-9]{3}|[A-Fa-f0-9]{6})"
                         placeholder="<?php echo esc_attr($default); ?>"
                         aria-label="<?php
                         /* translators: %s: colour field name, e.g. Background colour. */
@@ -487,16 +487,6 @@ final class Settings implements HasHooks
     }
 
     /**
-     * Validate a stored colour for display, falling back to a safe default.
-     */
-    private function color(mixed $value, string $fallback): string
-    {
-        $hex = sanitize_hex_color((string) $value);
-
-        return is_string($hex) && '' !== $hex ? $hex : $fallback;
-    }
-
-    /**
      * Sanitises, validates and clamps the submitted settings before save.
      *
      * @param mixed $raw
@@ -519,9 +509,12 @@ final class Settings implements HasHooks
             'link_label'   => isset($raw['link_label']) ? sanitize_text_field((string) $raw['link_label']) : '',
             'link_new_tab' => ! empty($raw['link_new_tab']),
 
-            'bg_color'   => $this->color($raw['bg_color'] ?? '', '#1e1e1e'),
-            'text_color' => $this->color($raw['text_color'] ?? '', '#ffffff'),
-            'link_color' => $this->color($raw['link_color'] ?? '', '#ffd166'),
+            // Colours go through the repository so a hex typed without the
+            // leading hash, which the field and the preview both accept, is
+            // kept instead of being quietly swapped for the packaged default.
+            'bg_color'   => $this->repository->color($raw['bg_color'] ?? '', '#1e1e1e'),
+            'text_color' => $this->repository->color($raw['text_color'] ?? '', '#ffffff'),
+            'link_color' => $this->repository->color($raw['link_color'] ?? '', '#ffd166'),
 
             'dismissible'  => ! empty($raw['dismissible']),
             'dismiss_days' => max(0, isset($raw['dismiss_days']) ? (int) $raw['dismiss_days'] : 7),

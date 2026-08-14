@@ -4,7 +4,7 @@ Tags: woocommerce, announcement bar, notification bar, promo bar, sale banner
 Requires at least: 6.5
 Tested up to: 7.0
 Requires PHP: 8.1
-Stable tag: 1.0.5
+Stable tag: 1.0.6
 Requires Plugins: woocommerce
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -94,6 +94,10 @@ Notice does not connect to any external services. Your bar settings (message, li
 Plogins Notice includes Polish, German and Spanish translations for the plugin interface. The text domain is `plogins-notice`, so WordPress.org language packs can also override or extend these bundled translations.
 
 == Changelog ==
+
+= 1.0.6 =
+* A colour typed without the leading "#", such as ff0000, is now saved and shown on the bar instead of falling back to the default palette.
+* Three-digit shorthand such as #f00 now works in the colour fields, in the live preview and on the storefront.
 
 = 1.0.4 =
 * Translations: completed Polish, German and Spanish for the PRO upgrade panel.

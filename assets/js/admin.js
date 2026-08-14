@@ -79,6 +79,26 @@
 
 	/* ---- Colour picker mirroring ------------------------------------- */
 
+	/**
+	 * Accept exactly what the hex field's pattern allows, with or without the
+	 * leading hash, three digits or six, and return the six-digit form the
+	 * native colour input needs. Same rule the server applies on save, so the
+	 * preview can no longer promise a colour the storefront will not use.
+	 */
+	function normaliseHex( value ) {
+		var v = String( value || '' ).trim().replace( /^#/, '' );
+
+		if ( ! /^([0-9a-fA-F]{3}|[0-9a-fA-F]{6})$/.test( v ) ) {
+			return '';
+		}
+
+		if ( v.length === 3 ) {
+			v = v.charAt( 0 ) + v.charAt( 0 ) + v.charAt( 1 ) + v.charAt( 1 ) + v.charAt( 2 ) + v.charAt( 2 );
+		}
+
+		return '#' + v;
+	}
+
 	root.querySelectorAll( 'input[type="color"][data-notice-color-for]' ).forEach(
 		function ( picker ) {
 			var textId = picker.getAttribute( 'data-notice-color-for' );
@@ -94,10 +114,12 @@
 			} );
 
 			text.addEventListener( 'input', function () {
-				if ( /^#?[0-9a-fA-F]{6}$/.test( text.value.trim() ) ) {
-					var v = text.value.trim();
-					picker.value = v.charAt( 0 ) === '#' ? v : '#' + v;
+				var value = normaliseHex( text.value );
+
+				if ( value ) {
+					picker.value = value;
 				}
+
 				schedule();
 			} );
 		}
@@ -117,11 +139,8 @@
 
 	function hex( name, fallback ) {
 		var input = field( name );
-		var v = input ? input.value.trim() : '';
-		if ( /^#?[0-9a-fA-F]{6}$/.test( v ) ) {
-			return v.charAt( 0 ) === '#' ? v : '#' + v;
-		}
-		return fallback;
+
+		return normaliseHex( input ? input.value : '' ) || fallback;
 	}
 
 	function escapeHtml( str ) {

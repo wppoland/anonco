@@ -82,6 +82,31 @@ final class SettingsRepository
     }
 
     /**
+     * Normalise a colour to a hex value, falling back when it is not usable.
+     *
+     * The hex field in the admin accepts a value without the leading hash,
+     * which is what most people type, and the live preview repainted the sample
+     * bar accordingly. sanitize_hex_color() insists on the hash, so `ff0000`
+     * was thrown away on save and shoppers kept seeing the packaged near-black
+     * bar. Add the hash before validating so the saved colour is the previewed
+     * one. Shared with the renderer so both ends agree on what a colour is.
+     */
+    public function color(mixed $value, string $fallback): string
+    {
+        $candidate = ltrim(trim((string) $value), '#');
+
+        // Shorthand is expanded so the stored value always suits the native
+        // colour picker in the admin, which only takes the six-digit form.
+        if (1 === preg_match('/^[A-Fa-f0-9]{3}$/', $candidate)) {
+            $candidate = $candidate[0] . $candidate[0] . $candidate[1] . $candidate[1] . $candidate[2] . $candidate[2];
+        }
+
+        $hex = '' !== $candidate ? sanitize_hex_color('#' . $candidate) : null;
+
+        return is_string($hex) && '' !== $hex ? $hex : $fallback;
+    }
+
+    /**
      * Whether any announcement bar should render on the front end right now.
      */
     public function isActive(): bool
