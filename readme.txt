@@ -24,10 +24,10 @@ disabled bar adds nothing to your pages.
 
 = Documentation and links =
 
-* **Documentation** - https://plogins.com/plogins-notice/docs/
-* **Plugin page** - https://plogins.com/plogins-notice/
-* **Source code** - https://github.com/wppoland/plogins-notice
-* **Bug reports and feature requests** - https://github.com/wppoland/plogins-notice/issues
+* **Documentation**: [plogins.com/plogins-notice/docs/](https://plogins.com/plogins-notice/docs/)
+* **Plugin page**: [plogins.com/plogins-notice/](https://plogins.com/plogins-notice/)
+* **Source code**: [github.com/wppoland/plogins-notice](https://github.com/wppoland/plogins-notice)
+* **Bug reports and feature requests**: [github.com/wppoland/plogins-notice/issues](https://github.com/wppoland/plogins-notice/issues)
 
 
 = Features =
