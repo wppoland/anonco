@@ -19,8 +19,8 @@ msgstr ""
 
 #. Plugin Name of the plugin
 #: notice.php
-msgid "Notice - Announcement Bar for WooCommerce"
-msgstr "Notice - Pasek ogłoszeń dla WooCommerce"
+msgid "Plogins Notice - Announcement Bar for WooCommerce"
+msgstr "Plogins Notice - Pasek ogłoszeń dla WooCommerce"
 
 #. Plugin URI of the plugin
 #: notice.php
@@ -48,9 +48,11 @@ msgstr "https://plogins.com/"
 
 #: plogins-notice.php:48
 msgid ""
-"Notice - Announcement Bar for WooCommerce requires WooCommerce to be active."
+"Plogins Notice - Announcement Bar for WooCommerce requires WooCommerce to be "
+"active."
 msgstr ""
-"Notice - Pasek ogłoszeń dla WooCommerce wymaga aktywnej wtyczki WooCommerce."
+"Plogins Notice - Pasek ogłoszeń dla WooCommerce wymaga aktywnej wtyczki "
+"WooCommerce."
 
 #: src/Admin/Settings.php:60
 msgid "Settings"

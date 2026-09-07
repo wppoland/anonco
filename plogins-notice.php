@@ -1,9 +1,9 @@
 <?php
 /**
- * Plugin Name:       Notice - Announcement Bar for WooCommerce
+ * Plugin Name:       Plogins Notice - Announcement Bar for WooCommerce
  * Plugin URI:        https://plogins.com/plogins-notice/
  * Description:        A dismissible announcement or promo bar for store-wide messages and offers, with colours and an optional link.
- * Version:           1.0.9
+ * Version:           1.0.10
  * Requires at least: 6.5
  * Requires PHP:      8.1
  * Requires Plugins:  woocommerce
@@ -25,7 +25,7 @@ namespace Notice;
 
 defined('ABSPATH') || exit;
 
-const VERSION     = '1.0.9';
+const VERSION     = '1.0.10';
 const PLUGIN_FILE = __FILE__;
 
 define('NOTICE_DIR', plugin_dir_path(__FILE__));
@@ -45,7 +45,7 @@ add_action('plugins_loaded', static function (): void {
     if (! class_exists('WooCommerce')) {
         add_action('admin_notices', static function (): void {
             echo '<div class="notice notice-error"><p>';
-            echo esc_html__('Notice - Announcement Bar for WooCommerce requires WooCommerce to be active.', 'plogins-notice');
+            echo esc_html__('Plogins Notice - Announcement Bar for WooCommerce requires WooCommerce to be active.', 'plogins-notice');
             echo '</p></div>';
         });
         return;
