@@ -4,7 +4,7 @@ Tags: woocommerce, announcement bar, notification bar, promo bar, sale banner
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.0.12
+Stable tag: 1.0.13
 Requires Plugins: woocommerce
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -45,9 +45,9 @@ disabled bar adds nothing to your pages.
 
 == Installation ==
 
-1. Upload the plugin to `/wp-content/plugins/notice`, or install via Plugins → Add New.
+1. Upload the plugin to `/wp-content/plugins/notice`, or install via Plugins > Add New.
 2. Activate it. WooCommerce must be active.
-3. Go to **WooCommerce → Announcement Bar**, write your message, set colours, then enable the bar.
+3. Go to **WooCommerce > Announcement Bar**, write your message, set colours, then enable the bar.
 
 == Frequently Asked Questions ==
 
@@ -94,6 +94,10 @@ Notice does not connect to any external services. Your bar settings (message, li
 Plogins Notice is fully translatable and ships the `plogins-notice.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
+
+= 1.0.13 =
+* Fixed: the PRO upgrade promo kept selling to people who had already bought the paid edition. Only the banner could be dismissed, so the sidebar promo and the locked feature cards followed a paying customer around for good. The promo now checks whether the paid edition is active and steps aside when it is.
+* Fixed: arrow glyphs in the admin menu paths, and in the strings handed to translators. An arrow inside a translatable string makes the glyph every translator's problem and changes the layout in any locale that drops it.
 
 = 1.0.12 =
 * Fixed: deleting the plugin left the per-user "dismiss" flag from the PRO notice in the database. Uninstall now removes it for every user, not just the one who dismissed it.

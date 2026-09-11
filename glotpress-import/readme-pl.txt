@@ -45,9 +45,9 @@ wyłączony pasek nie dodaje niczego do Twoich stron.
 
 == Installation ==
 
-1. Prześlij wtyczkę do `/wp-content/plugins/notice` lub zainstaluj przez Wtyczki → Dodaj nową.
+1. Prześlij wtyczkę do `/wp-content/plugins/notice` lub zainstaluj przez Wtyczki > Dodaj nową.
 2. Włącz ją. WooCommerce musi być aktywne.
-3. Przejdź do <strong>WooCommerce → Pasek ogłoszeń</strong>, napisz komunikat, ustaw kolory, a następnie włącz pasek.
+3. Przejdź do <strong>WooCommerce > Pasek ogłoszeń</strong>, napisz komunikat, ustaw kolory, a następnie włącz pasek.
 
 == Frequently Asked Questions ==
 
