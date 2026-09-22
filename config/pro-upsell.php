@@ -10,7 +10,7 @@
 defined('ABSPATH') || exit;
 
 return [
-    'name'       => 'Notice Pro',
+    'name'       => 'Anonco Pro',
     'url'        => 'https://plogins.com/plogins-notice-pro/pricing/',
     'sellable'   => true,
     'price_from' => 19,
@@ -49,8 +49,8 @@ return [
             'pl' => ['title' => 'Targetowanie geo i urządzeń', 'desc' => 'Listy dozwolonych lub zablokowanych krajów (kody ISO) oraz reguły mobile/desktop.'],
         ],
         [
-            'en' => ['title' => 'Extends free Notice', 'desc' => 'Requires the active free Notice plugin; delivered through Freemius with licensing and automatic updates.'],
-            'pl' => ['title' => 'Rozszerza darmowy Notice', 'desc' => 'Wymaga aktywnej darmowej wtyczki Notice; dostarczany przez Freemius z licencją i automatycznymi aktualizacjami.'],
+            'en' => ['title' => 'Extends free Anonco', 'desc' => 'Requires the active free Anonco plugin; delivered through Freemius with licensing and automatic updates.'],
+            'pl' => ['title' => 'Rozszerza darmowy Anonco', 'desc' => 'Wymaga aktywnej darmowej wtyczki Anonco; dostarczany przez Freemius z licencją i automatycznymi aktualizacjami.'],
         ],
     ],
 ];

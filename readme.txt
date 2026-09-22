@@ -1,10 +1,10 @@
-=== Plogins Notice - Announcement Bar for WooCommerce ===
+=== Anonco - Announcement Bar for WooCommerce ===
 Contributors: motylanogha
 Tags: woocommerce, announcement bar, notification bar, promo bar, sale banner
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.0.13
+Stable tag: 1.1.0
 Requires Plugins: woocommerce
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -13,7 +13,7 @@ A dismissible store-wide announcement bar for WooCommerce: message, link and col
 
 == Description ==
 
-Notice adds one announcement bar to the top of your WooCommerce store. Use it to
+Anonco adds one announcement bar to the top of your WooCommerce store. Use it to
 promote a sale, a free-shipping threshold, a shipping cut-off or any store-wide
 message, with an optional call-to-action button and your own colours.
 
@@ -45,7 +45,7 @@ disabled bar adds nothing to your pages.
 
 == Installation ==
 
-1. Upload the plugin to `/wp-content/plugins/notice`, or install via Plugins > Add New.
+1. Upload the plugin to `/wp-content/plugins/anonco`, or install via Plugins > Add New.
 2. Activate it. WooCommerce must be active.
 3. Go to **WooCommerce > Announcement Bar**, write your message, set colours, then enable the bar.
 
@@ -87,13 +87,16 @@ Yes. This plugin is compatible with WordPress Multisite. Network activate it or 
 
 == External Services ==
 
-Notice does not connect to any external services. Your bar settings (message, link, colours and the dismissal options) are kept on your own site in the `notice_settings` option, with a `notice_db_version` marker for upgrades. The dismissal choice lives only in each visitor's browser via localStorage, no cookies, no personal data, and nothing leaves your store.
+Anonco does not connect to any external services. Your bar settings (message, link, colours and the dismissal options) are kept on your own site in the `notice_settings` option, with a `notice_db_version` marker for upgrades. The dismissal choice lives only in each visitor's browser via localStorage, no cookies, no personal data, and nothing leaves your store.
 
 == Translations ==
 
-Plogins Notice is fully translatable and ships the `plogins-notice.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
+Anonco is fully translatable and ships the `anonco.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
+
+= 1.1.0 =
+* Renamed to Anonco. The WordPress.org review team asks a plugin name to lead with a distinctive, coined identifier rather than a generic descriptive word. Anonco is Esperanto for an announcement. The text domain follows the name; the stored data, the settings and every hook are unchanged.
 
 = 1.0.13 =
 * Fixed: the PRO upgrade promo kept selling to people who had already bought the paid edition. Only the banner could be dismissed, so the sidebar promo and the locked feature cards followed a paying customer around for good. The promo now checks whether the paid edition is active and steps aside when it is.

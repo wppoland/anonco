@@ -159,7 +159,7 @@ final class SettingsRepository
         ];
 
         /**
-         * Filter the announcement bars Notice will consider rendering.
+         * Filter the announcement bars Anonco will consider rendering.
          *
          * @param list<array{id: string, settings: array<string, mixed>}> $bars
          */

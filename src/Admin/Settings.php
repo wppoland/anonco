@@ -65,7 +65,7 @@ final class Settings implements HasHooks
 
         array_unshift(
             $links,
-            sprintf('<a href="%s">%s</a>', esc_url($url), esc_html__('Settings', 'plogins-notice')),
+            sprintf('<a href="%s">%s</a>', esc_url($url), esc_html__('Settings', 'anonco')),
         );
 
         return $links;
@@ -75,8 +75,8 @@ final class Settings implements HasHooks
     {
         add_submenu_page(
             self::PARENT,
-            __('Announcement Bar', 'plogins-notice'),
-            __('Announcement Bar', 'plogins-notice'),
+            __('Anonco: announcement bar', 'anonco'),
+            __('Announcement Bar', 'anonco'),
             'manage_woocommerce',
             self::PAGE,
             [$this, 'renderPage'],
@@ -143,9 +143,9 @@ final class Settings implements HasHooks
 
             <div class="notice-admin__intro">
                 <div>
-                    <h2><?php esc_html_e('One bar. Store-wide attention.', 'plogins-notice'); ?></h2>
+                    <h2><?php esc_html_e('One bar. Store-wide attention.', 'anonco'); ?></h2>
                     <p>
-                        <?php esc_html_e('Announce a sale, a shipping cut-off or any message across your whole store with a single bar at the top of every page. Add a call-to-action, pick your colours and let shoppers dismiss it. The live preview on the right updates as you type.', 'plogins-notice'); ?>
+                        <?php esc_html_e('Announce a sale, a shipping cut-off or any message across your whole store with a single bar at the top of every page. Add a call-to-action, pick your colours and let shoppers dismiss it. The live preview on the right updates as you type.', 'anonco'); ?>
                     </p>
                 </div>
             </div>
@@ -161,7 +161,7 @@ final class Settings implements HasHooks
                         $this->renderAppearanceCard($settings);
                         $this->renderBehaviourCard($settings);
                         ?>
-                        <?php submit_button(__('Save changes', 'plogins-notice')); ?>
+                        <?php submit_button(__('Save changes', 'anonco')); ?>
                     </div>
 
                     <div class="notice-admin__side">
@@ -183,13 +183,13 @@ final class Settings implements HasHooks
     {
         ?>
         <div class="notice-admin__card">
-            <h2><?php esc_html_e('Message', 'plogins-notice'); ?></h2>
+            <h2><?php esc_html_e('Message', 'anonco'); ?></h2>
             <table class="form-table" role="presentation">
                 <tbody>
                     <tr>
                         <th scope="row">
-                            <?php esc_html_e('Enable the bar', 'plogins-notice'); ?>
-                            <?php $this->help(__('The master switch. When off, nothing renders on your storefront and no CSS or JavaScript is loaded, zero front-end impact.', 'plogins-notice')); ?>
+                            <?php esc_html_e('Enable the bar', 'anonco'); ?>
+                            <?php $this->help(__('The master switch. When off, nothing renders on your storefront and no CSS or JavaScript is loaded, zero front-end impact.', 'anonco')); ?>
                         </th>
                         <td>
                             <label for="notice_enabled">
@@ -200,14 +200,14 @@ final class Settings implements HasHooks
                                     value="1"
                                     <?php checked((bool) ($settings['enabled'] ?? false), true); ?>
                                 />
-                                <?php esc_html_e('Show the announcement bar on the storefront.', 'plogins-notice'); ?>
+                                <?php esc_html_e('Show the announcement bar on the storefront.', 'anonco'); ?>
                             </label>
                         </td>
                     </tr>
                     <tr>
                         <th scope="row">
-                            <label for="notice_message"><?php esc_html_e('Announcement text', 'plogins-notice'); ?></label>
-                            <?php $this->help(__('The message shoppers see. A little safe HTML is allowed: <strong>, <em>, <a>, <span> and <br>. Everything else is stripped on save.', 'plogins-notice')); ?>
+                            <label for="notice_message"><?php esc_html_e('Announcement text', 'anonco'); ?></label>
+                            <?php $this->help(__('The message shoppers see. A little safe HTML is allowed: <strong>, <em>, <a>, <span> and <br>. Everything else is stripped on save.', 'anonco')); ?>
                         </th>
                         <td>
                             <textarea
@@ -215,10 +215,10 @@ final class Settings implements HasHooks
                                 name="<?php echo esc_attr(SettingsRepository::OPTION); ?>[message]"
                                 class="large-text"
                                 rows="3"
-                                placeholder="<?php esc_attr_e('e.g. Free shipping on orders over $50, this weekend only!', 'plogins-notice'); ?>"
+                                placeholder="<?php esc_attr_e('e.g. Free shipping on orders over $50, this weekend only!', 'anonco'); ?>"
                             ><?php echo esc_textarea((string) ($settings['message'] ?? '')); ?></textarea>
                             <p class="description">
-                                <?php esc_html_e('Allowed HTML: <strong>, <em>, <a href>, <span>, <br>.', 'plogins-notice'); ?>
+                                <?php esc_html_e('Allowed HTML: <strong>, <em>, <a href>, <span>, <br>.', 'anonco'); ?>
                             </p>
                         </td>
                     </tr>
@@ -235,16 +235,16 @@ final class Settings implements HasHooks
     {
         ?>
         <div class="notice-admin__card">
-            <h2><?php esc_html_e('Call to action', 'plogins-notice'); ?></h2>
+            <h2><?php esc_html_e('Call to action', 'anonco'); ?></h2>
             <p class="description">
-                <?php esc_html_e('Optional. Add a button after your message. Leave the label blank to show text only.', 'plogins-notice'); ?>
+                <?php esc_html_e('Optional. Add a button after your message. Leave the label blank to show text only.', 'anonco'); ?>
             </p>
             <table class="form-table" role="presentation">
                 <tbody>
                     <tr>
                         <th scope="row">
-                            <label for="notice_link_label"><?php esc_html_e('Button label', 'plogins-notice'); ?></label>
-                            <?php $this->help(__('The text on the button, e.g. "Shop the sale". Leave empty to hide the button.', 'plogins-notice')); ?>
+                            <label for="notice_link_label"><?php esc_html_e('Button label', 'anonco'); ?></label>
+                            <?php $this->help(__('The text on the button, e.g. "Shop the sale". Leave empty to hide the button.', 'anonco')); ?>
                         </th>
                         <td>
                             <input
@@ -253,14 +253,14 @@ final class Settings implements HasHooks
                                 name="<?php echo esc_attr(SettingsRepository::OPTION); ?>[link_label]"
                                 value="<?php echo esc_attr((string) ($settings['link_label'] ?? '')); ?>"
                                 class="regular-text"
-                                placeholder="<?php esc_attr_e('e.g. Shop now', 'plogins-notice'); ?>"
+                                placeholder="<?php esc_attr_e('e.g. Shop now', 'anonco'); ?>"
                             />
                         </td>
                     </tr>
                     <tr>
                         <th scope="row">
-                            <label for="notice_link_url"><?php esc_html_e('Button URL', 'plogins-notice'); ?></label>
-                            <?php $this->help(__('Where the button sends shoppers. Use a full URL including https://.', 'plogins-notice')); ?>
+                            <label for="notice_link_url"><?php esc_html_e('Button URL', 'anonco'); ?></label>
+                            <?php $this->help(__('Where the button sends shoppers. Use a full URL including https://.', 'anonco')); ?>
                         </th>
                         <td>
                             <input
@@ -276,8 +276,8 @@ final class Settings implements HasHooks
                     </tr>
                     <tr>
                         <th scope="row">
-                            <?php esc_html_e('Open in new tab', 'plogins-notice'); ?>
-                            <?php $this->help(__('Opens the link in a new browser tab. The plugin adds rel="noopener" automatically for security.', 'plogins-notice')); ?>
+                            <?php esc_html_e('Open in new tab', 'anonco'); ?>
+                            <?php $this->help(__('Opens the link in a new browser tab. The plugin adds rel="noopener" automatically for security.', 'anonco')); ?>
                         </th>
                         <td>
                             <label for="notice_link_new_tab">
@@ -288,7 +288,7 @@ final class Settings implements HasHooks
                                     value="1"
                                     <?php checked((bool) ($settings['link_new_tab'] ?? false), true); ?>
                                 />
-                                <?php esc_html_e('Open the call-to-action link in a new tab.', 'plogins-notice'); ?>
+                                <?php esc_html_e('Open the call-to-action link in a new tab.', 'anonco'); ?>
                             </label>
                         </td>
                     </tr>
@@ -305,16 +305,16 @@ final class Settings implements HasHooks
     {
         ?>
         <div class="notice-admin__card">
-            <h2><?php esc_html_e('Appearance', 'plogins-notice'); ?></h2>
+            <h2><?php esc_html_e('Appearance', 'anonco'); ?></h2>
             <p class="description">
-                <?php esc_html_e('The defaults are a ready-to-use palette: a near-black bar, white text and a warm amber accent, readable on any theme with no tuning. Adjust them only if you want the bar to match your brand.', 'plogins-notice'); ?>
+                <?php esc_html_e('The defaults are a ready-to-use palette: a near-black bar, white text and a warm amber accent, readable on any theme with no tuning. Adjust them only if you want the bar to match your brand.', 'anonco'); ?>
             </p>
             <table class="form-table" role="presentation">
                 <tbody>
                     <?php
-                    $this->colorRow('bg_color', __('Background colour', 'plogins-notice'), $settings, '#1e1e1e', __('The bar background. Pick a colour with strong contrast against the text colour for readability.', 'plogins-notice'));
-                    $this->colorRow('text_color', __('Text colour', 'plogins-notice'), $settings, '#ffffff', __('The message text colour.', 'plogins-notice'));
-                    $this->colorRow('link_color', __('Accent colour', 'plogins-notice'), $settings, '#ffd166', __('Used for links inside the message and for the call-to-action button.', 'plogins-notice'));
+                    $this->colorRow('bg_color', __('Background colour', 'anonco'), $settings, '#1e1e1e', __('The bar background. Pick a colour with strong contrast against the text colour for readability.', 'anonco'));
+                    $this->colorRow('text_color', __('Text colour', 'anonco'), $settings, '#ffffff', __('The message text colour.', 'anonco'));
+                    $this->colorRow('link_color', __('Accent colour', 'anonco'), $settings, '#ffd166', __('Used for links inside the message and for the call-to-action button.', 'anonco'));
                     ?>
                 </tbody>
             </table>
@@ -329,13 +329,13 @@ final class Settings implements HasHooks
     {
         ?>
         <div class="notice-admin__card">
-            <h2><?php esc_html_e('Dismiss behaviour', 'plogins-notice'); ?></h2>
+            <h2><?php esc_html_e('Dismiss behaviour', 'anonco'); ?></h2>
             <table class="form-table" role="presentation">
                 <tbody>
                     <tr>
                         <th scope="row">
-                            <?php esc_html_e('Dismissible', 'plogins-notice'); ?>
-                            <?php $this->help(__('Adds a close button. The shopper’s choice is stored in their browser (localStorage, no cookies, no personal data) so the bar stays hidden on return visits.', 'plogins-notice')); ?>
+                            <?php esc_html_e('Dismissible', 'anonco'); ?>
+                            <?php $this->help(__('Adds a close button. The shopper’s choice is stored in their browser (localStorage, no cookies, no personal data) so the bar stays hidden on return visits.', 'anonco')); ?>
                         </th>
                         <td>
                             <label for="notice_dismissible">
@@ -346,14 +346,14 @@ final class Settings implements HasHooks
                                     value="1"
                                     <?php checked((bool) ($settings['dismissible'] ?? false), true); ?>
                                 />
-                                <?php esc_html_e('Let shoppers close the bar.', 'plogins-notice'); ?>
+                                <?php esc_html_e('Let shoppers close the bar.', 'anonco'); ?>
                             </label>
                         </td>
                     </tr>
                     <tr>
                         <th scope="row">
-                            <label for="notice_dismiss_days"><?php esc_html_e('Remember for (days)', 'plogins-notice'); ?></label>
-                            <?php $this->help(__('How long a dismissal sticks before the bar can reappear. Use 0 to remember forever. Changing the message text resets this for everyone.', 'plogins-notice')); ?>
+                            <label for="notice_dismiss_days"><?php esc_html_e('Remember for (days)', 'anonco'); ?></label>
+                            <?php $this->help(__('How long a dismissal sticks before the bar can reappear. Use 0 to remember forever. Changing the message text resets this for everyone.', 'anonco')); ?>
                         </th>
                         <td>
                             <input
@@ -365,7 +365,7 @@ final class Settings implements HasHooks
                                 value="<?php echo esc_attr((string) (int) ($settings['dismiss_days'] ?? 7)); ?>"
                                 class="small-text"
                             />
-                            <p class="description"><?php esc_html_e('0 = remember forever.', 'plogins-notice'); ?></p>
+                            <p class="description"><?php esc_html_e('0 = remember forever.', 'anonco'); ?></p>
                         </td>
                     </tr>
                 </tbody>
@@ -385,10 +385,10 @@ final class Settings implements HasHooks
         $message = (string) ($settings['message'] ?? '');
         $hasLink = '' !== (string) ($settings['link_url'] ?? '') && '' !== (string) ($settings['link_label'] ?? '');
         ?>
-        <aside class="notice-admin__card notice-admin__preview" aria-label="<?php esc_attr_e('Announcement bar preview', 'plogins-notice'); ?>">
-            <h2><?php esc_html_e('Live preview', 'plogins-notice'); ?></h2>
+        <aside class="notice-admin__card notice-admin__preview" aria-label="<?php esc_attr_e('Announcement bar preview', 'anonco'); ?>">
+            <h2><?php esc_html_e('Live preview', 'anonco'); ?></h2>
             <p class="notice-admin__preview-hint">
-                <?php esc_html_e('A sample of how your bar will look. Colours, text and the button update as you edit.', 'plogins-notice'); ?>
+                <?php esc_html_e('A sample of how your bar will look. Colours, text and the button update as you edit.', 'anonco'); ?>
             </p>
             <div
                 class="notice-admin__stage"
@@ -404,7 +404,7 @@ final class Settings implements HasHooks
                         <?php
                         echo '' !== trim(wp_strip_all_tags($message))
                             ? wp_kses($message, $this->repository->allowedMessageHtml())
-                            : esc_html__('Your announcement will appear here.', 'plogins-notice');
+                            : esc_html__('Your announcement will appear here.', 'anonco');
                         ?>
                     </span>
                     <a
@@ -454,7 +454,7 @@ final class Settings implements HasHooks
                         placeholder="<?php echo esc_attr($default); ?>"
                         aria-label="<?php
                         /* translators: %s: colour field name, e.g. Background colour. */
-                        echo esc_attr(sprintf(__('%s hex value', 'plogins-notice'), $label));
+                        echo esc_attr(sprintf(__('%s hex value', 'anonco'), $label));
                         ?>"
                     />
                 </span>
@@ -475,7 +475,7 @@ final class Settings implements HasHooks
         <button
             type="button"
             class="notice-admin__help"
-            aria-label="<?php esc_attr_e('More information', 'plogins-notice'); ?>"
+            aria-label="<?php esc_attr_e('More information', 'anonco'); ?>"
             aria-describedby="<?php echo esc_attr($id); ?>"
             aria-expanded="false"
             popovertarget="<?php echo esc_attr($id); ?>"
