@@ -20,12 +20,12 @@ msgstr ""
 #. Plugin Name of the plugin
 #: anonco.php
 msgid "Anonco - Announcement Bar for WooCommerce"
-msgstr ""
+msgstr "Notice - Pasek ogłoszeń dla WooCommerce"
 
 #. Plugin URI of the plugin
 #: anonco.php
 msgid "https://plogins.com/plogins-notice/"
-msgstr ""
+msgstr "https://plogins.com/plogins-notice/"
 
 #. Description of the plugin
 #: anonco.php
@@ -39,17 +39,17 @@ msgstr ""
 #. Author of the plugin
 #: anonco.php
 msgid "WPPoland.com"
-msgstr ""
+msgstr "WPPoland.com"
 
 #. Author URI of the plugin
 #: anonco.php
 msgid "https://wppoland.com"
-msgstr ""
+msgstr "https://wppoland.com"
 
 #: anonco.php:48
 msgid ""
 "Anonco - Announcement Bar for WooCommerce requires WooCommerce to be active."
-msgstr ""
+msgstr "Notice - Pasek ogłoszeń dla WooCommerce wymaga aktywnego WooCommerce."
 
 #: src/Admin/ProUpsell.php:78
 msgid "Wkrótce"
@@ -111,7 +111,7 @@ msgstr "Ustawienia"
 
 #: src/Admin/Settings.php:78
 msgid "Anonco: announcement bar"
-msgstr ""
+msgstr "Notice: pasek ogłoszeń"
 
 #: src/Admin/Settings.php:79
 msgid "Announcement Bar"
