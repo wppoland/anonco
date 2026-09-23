@@ -72,11 +72,11 @@ msgid ""
 "colours and let shoppers dismiss it. The live preview on the right updates "
 "as you type."
 msgstr ""
-"Anuncie una oferta, una fecha límite de envío o cualquier mensaje en toda su "
-"tienda con una sola barra en la parte superior de cada página. Añada una "
-"llamada a la acción, elija sus colores y deje que los compradores la "
+"Anuncia una oferta, una fecha límite de envío o cualquier mensaje en toda tu "
+"tienda con una sola barra en la parte superior de cada página. Añade una "
+"llamada a la acción, elige tus colores y deja que los compradores la "
 "descarten. La vista previa en vivo a la derecha se actualiza a medida que "
-"escribe."
+"escribes."
 
 #: src/Admin/Settings.php:154
 msgid "Save changes"
@@ -95,7 +95,7 @@ msgid ""
 "The master switch. When off, nothing renders on your storefront and no CSS "
 "or JavaScript is loaded, zero front-end impact."
 msgstr ""
-"El interruptor maestro. Cuando está desactivado, no se muestra nada en su "
+"El interruptor maestro. Cuando está desactivado, no se muestra nada en tu "
 "escaparate y no se carga CSS ni JavaScript, sin impacto en el front-end."
 
 #: src/Admin/Settings.php:188
@@ -132,7 +132,7 @@ msgid ""
 "Optional. Add a button after your message. Leave the label blank to show "
 "text only."
 msgstr ""
-"Opcional. Añade un botón después de su mensaje. Deje la etiqueta en blanco "
+"Opcional. Añade un botón después de tu mensaje. Deja la etiqueta en blanco "
 "para mostrar solo texto."
 
 #: src/Admin/Settings.php:231
@@ -144,7 +144,7 @@ msgid ""
 "The text on the button, e.g. \"Shop the sale\". Leave empty to hide the "
 "button."
 msgstr ""
-"El texto del botón, p. \"Compre la oferta\". Déjelo vacío para ocultar el "
+"El texto del botón, p. \"Compra la oferta\". Déjalo vacío para ocultar el "
 "botón."
 
 #: src/Admin/Settings.php:241
@@ -158,7 +158,7 @@ msgstr "URL del botón"
 #: src/Admin/Settings.php:248
 msgid "Where the button sends shoppers. Use a full URL including https://."
 msgstr ""
-"Adónde el botón envía a los compradores. Utilice una URL completa que "
+"Adónde el botón envía a los compradores. Utiliza una URL completa que "
 "incluya https://."
 
 #: src/Admin/Settings.php:264
@@ -175,7 +175,7 @@ msgstr ""
 
 #: src/Admin/Settings.php:276
 msgid "Open the call-to-action link in a new tab."
-msgstr "Abra el enlace de llamado a la acción en una nueva pestaña."
+msgstr "Abre el enlace de llamado a la acción en una nueva pestaña."
 
 #: src/Admin/Settings.php:293
 msgid "Appearance"
@@ -201,7 +201,7 @@ msgid ""
 "The bar background. Pick a colour with strong contrast against the text "
 "colour for readability."
 msgstr ""
-"El fondo de la barra. Elija un color que contraste fuerte con el color del "
+"El fondo de la barra. Elige un color que contraste fuerte con el color del "
 "texto para facilitar la lectura."
 
 #: src/Admin/Settings.php:301
@@ -242,7 +242,7 @@ msgstr ""
 
 #: src/Admin/Settings.php:334
 msgid "Let shoppers close the bar."
-msgstr "Deje que los compradores cierren la barra."
+msgstr "Deja que los compradores cierren la barra."
 
 #: src/Admin/Settings.php:340
 msgid "Remember for (days)"
@@ -254,7 +254,7 @@ msgid ""
 "forever. Changing the message text resets this for everyone."
 msgstr ""
 "Cuánto tiempo se mantiene el descarte antes de que la barra pueda volver a "
-"aparecer. Utilice 0 para recordarlo para siempre. Cambiar el texto del "
+"aparecer. Utiliza 0 para recordarlo para siempre. Cambiar el texto del "
 "mensaje lo restablece para todos."
 
 #: src/Admin/Settings.php:353
@@ -279,7 +279,7 @@ msgstr ""
 
 #: src/Admin/Settings.php:392
 msgid "Your announcement will appear here."
-msgstr "Su anuncio aparecerá aquí."
+msgstr "Tu anuncio aparecerá aquí."
 
 #. translators: %s: colour field name, e.g. Background colour.
 #: src/Admin/Settings.php:442
