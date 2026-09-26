@@ -45,9 +45,9 @@ deaktivierte Leiste deinen Seiten nichts hinzufügt.
 
 == Installation ==
 
-1. Lade das Plugin nach `/wp-content/plugins/notice` hoch oder installiere es über Plugins → Installieren.
+1. Lade das Plugin nach `/wp-content/plugins/notice` hoch oder installiere es über Plugins > Installieren.
 2. Aktiviere es. WooCommerce muss aktiv sein.
-3. Gehe zu <strong>WooCommerce → Ankündigungsleiste</strong>, schreibe deine Nachricht, lege Farben fest und aktiviere dann die Leiste.
+3. Gehe zu <strong>WooCommerce > Ankündigungsleiste</strong>, schreibe deine Nachricht, lege Farben fest und aktiviere dann die Leiste.
 
 == Frequently Asked Questions ==
 

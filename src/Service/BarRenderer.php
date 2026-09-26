@@ -127,9 +127,9 @@ final class BarRenderer implements HasHooks
             'bar_id'         => $barId,
             'message'        => (string) ($settings['message'] ?? ''),
             'allowed_html'   => $this->settings->allowedMessageHtml(),
-            'bg_color'       => $this->color($settings['bg_color'] ?? '', '#1e1e1e'),
-            'text_color'     => $this->color($settings['text_color'] ?? '', '#ffffff'),
-            'link_color'     => $this->color($settings['link_color'] ?? '', '#ffd166'),
+            'bg_color'       => $this->settings->color($settings['bg_color'] ?? '', '#1e1e1e'),
+            'text_color'     => $this->settings->color($settings['text_color'] ?? '', '#ffffff'),
+            'link_color'     => $this->settings->color($settings['link_color'] ?? '', '#ffd166'),
             'has_link'       => $hasLink,
             'link_url'       => $linkUrl,
             'link_label'     => $linkLabel,
@@ -140,15 +140,5 @@ final class BarRenderer implements HasHooks
             // whenever the message changes, so a new announcement always shows.
             'storage_key'    => 'notice_dismissed_' . $barId . '_' . substr(md5((string) ($settings['message'] ?? '')), 0, 8),
         ];
-    }
-
-    /**
-     * Validate a stored colour, falling back to a safe default.
-     */
-    private function color(mixed $value, string $fallback): string
-    {
-        $hex = sanitize_hex_color((string) $value);
-
-        return is_string($hex) && '' !== $hex ? $hex : $fallback;
     }
 }

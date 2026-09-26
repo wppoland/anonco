@@ -1,10 +1,10 @@
-=== Notice - Announcement Bar for WooCommerce ===
+=== Anonco - Announcement Bar for WooCommerce ===
 Contributors: motylanogha
 Tags: woocommerce, announcement bar, notification bar, promo bar, sale banner
 Requires at least: 6.5
-Tested up to: 7.0
+Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.0.5
+Stable tag: 1.1.1
 Requires Plugins: woocommerce
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -13,7 +13,7 @@ A dismissible store-wide announcement bar for WooCommerce: message, link and col
 
 == Description ==
 
-Notice adds one announcement bar to the top of your WooCommerce store. Use it to
+Anonco adds one announcement bar to the top of your WooCommerce store. Use it to
 promote a sale, a free-shipping threshold, a shipping cut-off or any store-wide
 message, with an optional call-to-action button and your own colours.
 
@@ -24,10 +24,10 @@ disabled bar adds nothing to your pages.
 
 = Documentation and links =
 
-* **Documentation** - https://plogins.com/plogins-notice/docs/
-* **Plugin page** - https://plogins.com/plogins-notice/
-* **Source code** - https://github.com/wppoland/plogins-notice
-* **Bug reports and feature requests** - https://github.com/wppoland/plogins-notice/issues
+* **Documentation**: [plogins.com/plogins-notice/docs/](https://plogins.com/plogins-notice/docs/)
+* **Plugin page**: [plogins.com/plogins-notice/](https://plogins.com/plogins-notice/)
+* **Source code**: [github.com/wppoland/plogins-notice](https://github.com/wppoland/plogins-notice)
+* **Bug reports and feature requests**: [github.com/wppoland/plogins-notice/issues](https://github.com/wppoland/plogins-notice/issues)
 
 
 = Features =
@@ -45,9 +45,9 @@ disabled bar adds nothing to your pages.
 
 == Installation ==
 
-1. Upload the plugin to `/wp-content/plugins/notice`, or install via Plugins → Add New.
+1. Upload the plugin to `/wp-content/plugins/anonco`, or install via Plugins > Add New.
 2. Activate it. WooCommerce must be active.
-3. Go to **WooCommerce → Announcement Bar**, write your message, set colours, then enable the bar.
+3. Go to **WooCommerce > Announcement Bar**, write your message, set colours, then enable the bar.
 
 == Frequently Asked Questions ==
 
@@ -87,13 +87,45 @@ Yes. This plugin is compatible with WordPress Multisite. Network activate it or 
 
 == External Services ==
 
-Notice does not connect to any external services. Your bar settings (message, link, colours and the dismissal options) are kept on your own site in the `notice_settings` option, with a `notice_db_version` marker for upgrades. The dismissal choice lives only in each visitor's browser via localStorage, no cookies, no personal data, and nothing leaves your store.
+Anonco does not connect to any external services. Your bar settings (message, link, colours and the dismissal options) are kept on your own site in the `notice_settings` option, with a `notice_db_version` marker for upgrades. The dismissal choice lives only in each visitor's browser via localStorage, no cookies, no personal data, and nothing leaves your store.
 
 == Translations ==
 
-Plogins Notice includes Polish, German and Spanish translations for the plugin interface. The text domain is `plogins-notice`, so WordPress.org language packs can also override or extend these bundled translations.
+Anonco is fully translatable and ships the `anonco.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
+
+= 1.1.1 =
+* The sidebar upgrade promo now follows the same dismissal as the banner. Dismissing the banner used to leave a full-height advert on the settings screen for good, which is not what the WordPress.org guideline on upgrade prompts means by used with moderation.
+
+= 1.1.0 =
+* Renamed to Anonco. The WordPress.org review team asks a plugin name to lead with a distinctive, coined identifier rather than a generic descriptive word. Anonco is Esperanto for an announcement. The text domain follows the name; the stored data, the settings and every hook are unchanged.
+
+= 1.0.13 =
+* Fixed: the PRO upgrade promo kept selling to people who had already bought the paid edition. Only the banner could be dismissed, so the sidebar promo and the locked feature cards followed a paying customer around for good. The promo now checks whether the paid edition is active and steps aside when it is.
+* Fixed: arrow glyphs in the admin menu paths, and in the strings handed to translators. An arrow inside a translatable string makes the glyph every translator's problem and changes the layout in any locale that drops it.
+
+= 1.0.12 =
+* Fixed: deleting the plugin left the per-user "dismiss" flag from the PRO notice in the database. Uninstall now removes it for every user, not just the one who dismissed it.
+
+= 1.0.11 =
+* The translation template was regenerated. It still named an older version of the plugin and pointed at source lines that had since moved, which is what translation tools read to show a string in context.
+
+= 1.0.10 =
+* Renamed to Plogins Notice - Announcement Bar for WooCommerce so the name leads with the brand rather than a generic word, which is what the WordPress.org plugin review team asks for. The plugin slug is unchanged.
+
+= 1.0.9 =
+* Removed the "Tested up to" header from the main PHP file. It belongs in readme.txt only, where it is already declared; present in both, the header can override the readme and show a compatibility version that was never intended.
+
+= 1.0.8 =
+* Tested against WordPress 7.1. Verified by activating this build on a clean 7.1 install with WooCommerce 11.1, not by editing the header.
+
+= 1.0.7 =
+* Fixed the PRO promo on the settings screen quoting a price in PLN. PRO is priced and charged in EUR, so an admin on a Polish site was shown a zloty amount and then billed in euro, and the zloty figure was a fixed conversion that drifted from the real charge as the rate moved. The promo now shows the euro price that is actually taken.
+
+= 1.0.6 =
+* A colour typed without the leading "#", such as ff0000, is now saved and shown on the bar instead of falling back to the default palette.
+* Three-digit shorthand such as #f00 now works in the colour fields, in the live preview and on the storefront.
 
 = 1.0.4 =
 * Translations: completed Polish, German and Spanish for the PRO upgrade panel.
