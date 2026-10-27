@@ -43,6 +43,34 @@ disabled bar adds nothing to your pages.
 * Translation ready (POT included) and a clean uninstall.
 * HPOS and cart/checkout blocks compatible.
 
+== Anonco Pro ==
+
+Anonco Pro is a separate paid plugin that extends Anonco.
+
+Included in Anonco:
+
+* Store-wide bar
+* Message with safe HTML
+* CTA button
+* Custom colours
+* Dismissal without cookies
+
+Anonco Pro adds:
+
+* CTA click analytics
+* Impression analytics
+* Page targeting
+* Multiple bars
+* A/B testing
+* Role targeting
+* Geo and device targeting
+
+The free edition is not a trial and its features stay available without a time limit.
+
+* **Anonco Pro** - [plogins.com/plogins-notice-pro/](https://plogins.com/plogins-notice-pro/)
+* **Compare editions and pricing** - [plogins.com/plogins-notice-pro/pricing/](https://plogins.com/plogins-notice-pro/pricing/)
+* **PRO documentation** - [plogins.com/plogins-notice-pro/docs/](https://plogins.com/plogins-notice-pro/docs/)
+
 == Installation ==
 
 1. Upload the plugin to `/wp-content/plugins/anonco`, or install via Plugins > Add New.
