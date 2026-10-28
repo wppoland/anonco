@@ -4,14 +4,14 @@
  * scripts/gen-pro-upsell.mjs. The admin upsell renders this; curate the
  * feature list to fit this plugin's settings screen (do not invent features).
  *
- * @package plogins-notice-pro
+ * @package anonco-pro
  */
 
 defined('ABSPATH') || exit;
 
 return [
     'name'       => 'Anonco Pro',
-    'url'        => 'https://plogins.com/plogins-notice-pro/pricing/',
+    'url'        => 'https://plogins.com/anonco-pro/pricing/',
     'sellable'   => true,
     'price_from' => 19,
     'currency'   => 'EUR',

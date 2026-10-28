@@ -21,7 +21,7 @@ msgstr ""
 
 #. Plugin URI of the plugin
 #: anonco.php
-msgid "https://plogins.com/plogins-notice/"
+msgid "https://plogins.com/anonco/"
 msgstr ""
 
 #. Description of the plugin

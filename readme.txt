@@ -4,7 +4,7 @@ Tags: woocommerce, announcement bar, notification bar, promo bar, sale banner
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.1.2
+Stable tag: 1.1.3
 Requires Plugins: woocommerce
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -24,10 +24,10 @@ disabled bar adds nothing to your pages.
 
 = Documentation and links =
 
-* **Documentation**: [plogins.com/plogins-notice/docs/](https://plogins.com/plogins-notice/docs/)
-* **Plugin page**: [plogins.com/plogins-notice/](https://plogins.com/plogins-notice/)
-* **Source code**: [github.com/wppoland/plogins-notice](https://github.com/wppoland/plogins-notice)
-* **Bug reports and feature requests**: [github.com/wppoland/plogins-notice/issues](https://github.com/wppoland/plogins-notice/issues)
+* **Documentation**: [plogins.com/anonco/docs/](https://plogins.com/anonco/docs/)
+* **Plugin page**: [plogins.com/anonco/](https://plogins.com/anonco/)
+* **Source code**: [github.com/wppoland/anonco](https://github.com/wppoland/anonco)
+* **Bug reports and feature requests**: [github.com/wppoland/anonco/issues](https://github.com/wppoland/anonco/issues)
 
 
 = Features =
@@ -67,9 +67,9 @@ Anonco Pro adds:
 
 The free edition is not a trial and its features stay available without a time limit.
 
-* **Anonco Pro** - [plogins.com/plogins-notice-pro/](https://plogins.com/plogins-notice-pro/)
-* **Compare editions and pricing** - [plogins.com/plogins-notice-pro/pricing/](https://plogins.com/plogins-notice-pro/pricing/)
-* **PRO documentation** - [plogins.com/plogins-notice-pro/docs/](https://plogins.com/plogins-notice-pro/docs/)
+* **Anonco Pro** - [plogins.com/anonco-pro/](https://plogins.com/anonco-pro/)
+* **Compare editions and pricing** - [plogins.com/anonco-pro/pricing/](https://plogins.com/anonco-pro/pricing/)
+* **PRO documentation** - [plogins.com/anonco-pro/docs/](https://plogins.com/anonco-pro/docs/)
 
 == Installation ==
 
@@ -122,6 +122,9 @@ Anonco does not connect to any external services. Your bar settings (message, li
 Anonco is fully translatable and ships the `anonco.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
+
+= 1.1.3 =
+* Links point at the new plogins.com address and the renamed GitHub repository.
 
 = 1.1.2 =
 * The upgrade notice's "Coming soon" and "Get notified" labels are English source strings for every language; Polish sites used to get their own Polish source text, which translators in other languages then saw untranslated.
