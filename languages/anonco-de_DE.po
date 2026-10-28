@@ -23,8 +23,8 @@ msgstr "Anonco - Ankündigungsleiste für WooCommerce"
 
 #. Plugin URI of the plugin
 #: anonco.php
-msgid "https://plogins.com/plogins-notice/"
-msgstr "https://plogins.com/plogins-notice/"
+msgid "https://plogins.com/anonco/"
+msgstr "https://plogins.com/anonco/"
 
 #. Description of the plugin
 #: anonco.php
