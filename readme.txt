@@ -110,8 +110,9 @@ Yes. This plugin is compatible with WordPress Multisite. Network activate it or 
 
 == Screenshots ==
 
-1. The announcement bar on a storefront.
-2. The settings screen with a live preview.
+1. Announcement bar with a call-to-action button across the top of the shop.
+2. Settings under WooCommerce > Announcement Bar, with a live preview.
+3. The bar on a phone.
 
 == External Services ==
 
