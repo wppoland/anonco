@@ -125,7 +125,7 @@ Anonco is fully translatable and ships the `anonco.pot` template. Translations a
 == Changelog ==
 
 = 1.1.6 =
-* Fixed: the live preview showed allowed HTML such as <strong> and links as raw tags. It now renders the message with the same tags the bar keeps on save.
+* Fixed: the live preview showed allowed HTML such as `<strong>` and links as raw tags. It now renders the message with the same tags the bar keeps on save.
 
 = 1.1.5 =
 * Fixed: clearing the announcement text on the settings screen now shows the placeholder in the live preview instead of the previously saved message.
