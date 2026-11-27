@@ -400,7 +400,7 @@ final class Settings implements HasHooks
                 "
             >
                 <div class="notice-admin__bar">
-                    <span class="notice-admin__bar-message" data-notice-preview-message data-empty="<?php esc_attr_e('Your announcement will appear here.', 'anonco'); ?>">
+                    <span class="notice-admin__bar-message" data-notice-preview-message data-empty="<?php esc_attr_e('Your announcement will appear here.', 'anonco'); ?>" data-allowed-html="<?php echo esc_attr((string) wp_json_encode($this->repository->allowedMessageHtml())); ?>">
                         <?php
                         echo '' !== trim(wp_strip_all_tags($message))
                             ? wp_kses($message, $this->repository->allowedMessageHtml())

@@ -4,7 +4,7 @@ Tags: woocommerce, announcement bar, notification bar, promo bar, sale banner
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.1.5
+Stable tag: 1.1.6
 Requires Plugins: woocommerce
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -123,6 +123,9 @@ Anonco does not connect to any external services. Your bar settings (message, li
 Anonco is fully translatable and ships the `anonco.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
+
+= 1.1.6 =
+* Fixed: the live preview showed allowed HTML such as `<strong>` and links as raw tags. It now renders the message with the same tags the bar keeps on save.
 
 = 1.1.5 =
 * Fixed: clearing the announcement text on the settings screen now shows the placeholder in the live preview instead of the previously saved message.

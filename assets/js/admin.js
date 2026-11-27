@@ -143,10 +143,59 @@
 		return normaliseHex( input ? input.value : '' ) || fallback;
 	}
 
-	function escapeHtml( str ) {
-		var div = document.createElement( 'div' );
-		div.textContent = str;
-		return div.innerHTML;
+	// Same allow-list as the server (SettingsRepository::allowedMessageHtml),
+	// printed on the preview element, so the preview matches what wp_kses keeps.
+	var allowedHtml = {};
+	try {
+		allowedHtml = JSON.parse( previewMessage ? previewMessage.getAttribute( 'data-allowed-html' ) || '{}' : '{}' );
+	} catch ( e ) {
+		allowedHtml = {};
+	}
+
+	// The URL parser strips tabs and control characters the way the browser
+	// does on click, so the scheme it reports is the one that would run.
+	function safeUrl( url ) {
+		try {
+			return /^(https?|mailto|tel):$/.test( new URL( url, document.baseURI ).protocol );
+		} catch ( e ) {
+			return false;
+		}
+	}
+
+	// Parse into an inert document (no scripts run, no images load) and copy
+	// only allowed elements and attributes; text is copied as text nodes.
+	function sanitised( html ) {
+		var fragment = document.createDocumentFragment();
+		var source = new DOMParser().parseFromString( '<body>' + html, 'text/html' ).body;
+
+		function copy( from, to ) {
+			Array.prototype.forEach.call( from.childNodes, function ( node ) {
+				if ( node.nodeType === 3 ) {
+					to.appendChild( document.createTextNode( node.nodeValue ) );
+					return;
+				}
+				if ( node.nodeType !== 1 ) {
+					return;
+				}
+				var tag = node.nodeName.toLowerCase();
+				if ( ! Object.prototype.hasOwnProperty.call( allowedHtml, tag ) ) {
+					copy( node, to ); // wp_kses drops the tag and keeps its text.
+					return;
+				}
+				var el = document.createElement( tag );
+				Object.keys( allowedHtml[ tag ] || {} ).forEach( function ( attr ) {
+					var value = node.getAttribute( attr );
+					if ( null !== value && ( 'href' !== attr || safeUrl( value ) ) ) {
+						el.setAttribute( attr, value );
+					}
+				} );
+				copy( node, el );
+				to.appendChild( el );
+			} );
+		}
+
+		copy( source, fragment );
+		return fragment;
 	}
 
 	function render() {
@@ -162,11 +211,11 @@
 		var message = messageField ? messageField.value.trim() : '';
 
 		if ( previewMessage ) {
-			// Show the typed message. We escape it here for safety in the live
-			// preview; the saved output is sanitised server-side with wp_kses.
-			previewMessage.innerHTML = message
-				? escapeHtml( message )
-				: escapeHtml( previewMessage.getAttribute( 'data-empty' ) || 'Your announcement will appear here.' );
+			if ( message ) {
+				previewMessage.replaceChildren( sanitised( message ) );
+			} else {
+				previewMessage.textContent = previewMessage.getAttribute( 'data-empty' ) || 'Your announcement will appear here.';
+			}
 		}
 
 		if ( previewCta ) {
