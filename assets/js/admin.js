@@ -178,9 +178,6 @@
 					return;
 				}
 				var tag = node.nodeName.toLowerCase();
-				if ( 'script' === tag || 'style' === tag ) {
-					return;
-				}
 				if ( ! Object.prototype.hasOwnProperty.call( allowedHtml, tag ) ) {
 					copy( node, to ); // wp_kses drops the tag and keeps its text.
 					return;
